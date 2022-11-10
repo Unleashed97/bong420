@@ -46,6 +46,10 @@ a {
     color: inherit;
 }
 
+.hightlight-yellow {
+    color: #dbff00;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/footer.scss';
@@ -57,3 +61,4 @@ a {
 @import 'components/burger.scss';
 @import 'components/btn.scss';
 @import 'components/user-controls.scss';
+@import 'components/banner.scss';

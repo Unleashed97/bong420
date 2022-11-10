@@ -5,8 +5,34 @@
     align-items: center;
     justify-content: center;
 
+    font-family: $family;
+    font-size: 1.6rem;
+
     background: none;
     border: 0;
+
+    &--lg {
+        min-height: 64px;
+
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: 0.08rem;
+        text-transform: uppercase;
+
+        border-radius: 4px;
+    }
+
+    &--black {
+        margin-top: 24px;
+        background-color: #000;
+        color: #fff;
+    }
+
+    &--orange {
+        background-color: #ff4207;
+        color: #000;
+    }
 
     &__icon {
         margin-right: 5px;

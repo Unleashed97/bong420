@@ -12,7 +12,26 @@
         @@include('html/partials/header.html')
 
         <!-- main -->
-        <main></main>
+        <main>
+            <div class="container container--md">
+                <div class="banner">
+                    <div class="banner__sale">
+                        <h2 class="banner__title">Скидки <span class="hightlight-yellow">до 30%</span></h2>
+                        <picture>
+                            <source srcset="img/logo/logo-banner.webp">
+                            <img src="img/logo/logo-banner.png" alt="">
+                        </picture>
+
+                        <a href="#" class="btn btn--lg btn--orange banner__sale-btn">В каталог</a>
+                    </div>
+                    <div class="banner__delivery">
+                        <h2 class="banner__title">Бесплатная <br> доставка <br>
+                            по России</h2>
+                        <a href="#" class="btn btn--lg btn--black banner__delivery-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </main>
         <!-- footer include -->
         @@include('html/partials/footer.html')
     </div>
