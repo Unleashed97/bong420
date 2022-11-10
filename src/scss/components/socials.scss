@@ -1,0 +1,32 @@
+.socials {
+    display: flex;
+    gap: 8px;
+
+    &__item {
+    }
+
+    &__link {
+        width: 31px;
+        height: 31px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 2px solid $colors-font-main;
+        border-radius: 50%;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: $colors-font-main;
+            .socials__icon path {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__icon path {
+        transition: 0.3s linear;
+    }
+}

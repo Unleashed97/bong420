@@ -1,0 +1,14 @@
+.user-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &__item {
+    }
+
+    &__btn {
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+    }
+}

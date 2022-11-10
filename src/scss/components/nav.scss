@@ -1,0 +1,24 @@
+.nav {
+    &--service {
+        .nav__list {
+            gap: 35px;
+        }
+    }
+
+    &--main {
+        margin-right: auto;
+
+        .nav__list {
+            gap: 30px;
+        }
+
+        .nav__link {
+            display: block;
+            padding: 23px 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+    }
+}

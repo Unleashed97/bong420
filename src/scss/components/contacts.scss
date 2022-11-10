@@ -1,0 +1,28 @@
+.contacts {
+    font-style: normal;
+    display: flex;
+    gap: 14px;
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__address {
+        max-width: 238px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px 9px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        max-width: 19px;
+        max-height: 13px;
+        margin-right: 6px;
+    }
+}
