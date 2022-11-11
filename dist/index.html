@@ -142,10 +142,28 @@
 
                 <ul class="user-controls">
                     <li class="user-controls__item">
-                        <button type="button" class="btn user-controls__btn">
-                            <img src="img/icons/user.svg" class="btn__icon" alt="">
-                            Пользователь
-                        </button>
+                        <div class="dropdown">
+                            <button type="button" class="btn user-controls__btn dropdown__btn">
+                                <img src="img/icons/user.svg" class="btn__icon" alt="">
+                                Пользователь
+                            </button>
+                            <div class="dropdown__content">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__item-el">
+                                            <img src="img/icons/key.svg" class="dropdown__icon" alt="ключ">
+                                            Личный кабинет
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <button type="button" class="btn dropdown__item-el">
+                                            <img src="img/icons/exit.svg" class="dropdown__icon" alt="ключ">
+                                            Выйти
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="user-controls__item">
                         <button type="button" class="btn user-controls__btn">
