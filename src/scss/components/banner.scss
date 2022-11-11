@@ -43,6 +43,30 @@
         }
     }
 
+    &--2 {
+        min-height: 147px;
+        max-height: 147px;
+        padding: 0;
+
+        background-image: url('../img/banner/2/bg.jpg');
+        background-size: cover;
+
+        .banner__inner {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .banner__text {
+            width: 467px;
+            font-size: 2.4rem;
+            line-height: 1.2;
+
+            color: #fff;
+        }
+    }
+
     &__sale {
         display: flex;
         align-items: center;

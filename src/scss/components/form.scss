@@ -23,4 +23,37 @@
             }
         }
     }
+
+    &--subscribe {
+        display: flex;
+        width: fit-content;
+        position: relative;
+
+        .form__input {
+            display: flex;
+            align-items: center;
+            width: 731px;
+            height: 67px;
+            padding: 4px 293px 4px 32px;
+
+            background-color: #fff;
+            border-radius: 6px;
+            border: 0;
+        }
+
+        .form__btn {
+            position: absolute;
+            right: 4px;
+            top: 4px;
+
+            width: 279px;
+            height: 59px;
+
+            font-weight: 800;
+            font-size: 2rem;
+            color: #000;
+
+            border-radius: 4px;
+        }
+    }
 }
