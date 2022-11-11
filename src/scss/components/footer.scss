@@ -1,7 +1,27 @@
 .footer {
     background-color: #000;
     &__inner {
+        position: relative;
         padding: 38px 0 30px;
+    }
+
+    &__to-top {
+        position: absolute;
+        top: -20.5px;
+        right: -50px;
+        z-index: 1;
+
+        width: 41px;
+        height: 41px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #253765;
+        border-radius: 50%;
+        border: 0;
+        cursor: pointer;
     }
 
     &__top {
@@ -47,6 +67,7 @@
     &__bottom {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__found-mistake {
