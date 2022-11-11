@@ -10,3 +10,37 @@ export const handleToTop = () => {
         })
     })
 }
+
+export const handleDropdownsOpen = () => {
+    const btnList = document.querySelectorAll('.dropdown__btn')
+    const btnClose = document.querySelectorAll('.dropdown__close')
+
+    // window.addEventListener('click', (e) => {
+    //     console.log(e.target.closest('.dropdown__content'))
+    //     if (!e.target.closest('.dropdown__content')) {
+    //         console.log('here')
+    //         document
+    //             .querySelectorAll('.dropdown')
+    //             .forEach((dropdown) => dropdown.classList.remove('active'))
+    //     }
+    // })
+
+    btnList.forEach((btn) =>
+        btn.addEventListener('click', () => {
+            btnList.forEach((btn) => {
+                const dropdown = btn.closest('.dropdown')
+                dropdown.classList.remove('active')
+            })
+            const dropdown = btn.closest('.dropdown')
+            dropdown.classList.toggle('active')
+        }),
+    )
+
+    btnClose.forEach((btn) =>
+        btn.addEventListener('click', () => {
+            const dropdown = btn.closest('.dropdown')
+
+            dropdown.classList.remove('active')
+        }),
+    )
+}
