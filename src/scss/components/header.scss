@@ -17,9 +17,16 @@
 
         font-size: 1.2rem;
         color: #cce1e3;
+
+        @media (max-width: $lg) {
+            padding: 0 34px;
+        }
     }
 
     &__main {
+        @media (max-width: $lg) {
+            padding: 0 34px;
+        }
     }
 
     &__main-top {
@@ -35,5 +42,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__logo {
+        img {
+            @media (max-width: $lg) {
+                max-width: 120px;
+                height: 39px;
+            }
+        }
     }
 }

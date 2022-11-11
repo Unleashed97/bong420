@@ -190,6 +190,10 @@
 
         transition: 0.3s linear;
 
+        @media (max-width: $lg) {
+            display: none;
+        }
+
         &::after {
             content: '';
             position: absolute;

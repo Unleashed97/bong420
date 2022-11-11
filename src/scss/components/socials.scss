@@ -37,6 +37,16 @@
                 fill: #fff;
             }
         }
+
+        @media (max-width: $lg) {
+            width: 20px;
+            height: 20px;
+
+            svg {
+                width: 10px;
+                height: 10px;
+            }
+        }
     }
 
     &__icon path {

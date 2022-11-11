@@ -14,6 +14,12 @@
         letter-spacing: 0.05rem;
     }
 
+    &__btn-text {
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
+
     &__btn-dot {
         position: absolute;
         top: 0;

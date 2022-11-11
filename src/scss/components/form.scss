@@ -21,6 +21,10 @@
                 font-size: 1.4rem;
                 color: $colors-font-main;
             }
+
+            @media (max-width: $lg) {
+                width: 242px;
+            }
         }
     }
 
@@ -39,6 +43,14 @@
             background-color: #fff;
             border-radius: 6px;
             border: 0;
+
+            @media (max-width: $lg) {
+                max-width: 390px;
+
+                padding: 2px 170px 2px 17px;
+
+                height: 40px;
+            }
         }
 
         .form__btn {
@@ -54,6 +66,13 @@
             color: #000;
 
             border-radius: 4px;
+
+            @media (max-width: $lg) {
+                max-width: 156px;
+                font-size: 1.2rem;
+                min-height: 33px;
+                max-height: 33px;
+            }
         }
     }
 

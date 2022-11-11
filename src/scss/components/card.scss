@@ -5,19 +5,36 @@
     max-width: 365px;
     min-height: 642px;
 
+    @media (max-width: $lg) {
+        min-height: 409px;
+    }
+
     &--new {
         min-height: 504px;
         max-width: 223px;
+
+        @media (max-width: $lg) {
+            min-height: 318px;
+        }
 
         .card__image-wrapper {
             width: 223px;
             height: 223px;
 
             margin-bottom: 29px;
+
+            @media (max-width: $lg) {
+                width: 140px;
+                height: 140px;
+            }
         }
 
         .card__image {
             max-width: 147px;
+
+            @media (max-width: $lg) {
+                max-width: 103px;
+            }
         }
         .card__title {
             flex: 1 0 0;
@@ -25,6 +42,12 @@
 
             font-size: 2.2rem;
             line-height: 1.2;
+
+            @media (max-width: $lg) {
+                margin-bottom: 4px;
+
+                font-size: 1.4rem;
+            }
         }
 
         .card__rating {
@@ -39,19 +62,46 @@
         .card__stars-icon {
             width: 22px;
             height: 22px;
+
+            @media (max-width: $lg) {
+                width: 13px;
+                height: 13px;
+            }
+        }
+
+        .card__rating-reviews {
+            @media (max-width: $lg) {
+                font-size: 1rem;
+            }
         }
 
         .card__price {
             margin-bottom: 17px;
+
+            @media (max-width: $lg) {
+                font-size: 1.4rem;
+            }
         }
 
         .card__footer {
             gap: 3px;
         }
 
-        .card__btn-cart {
+        .card__btn-cart,
+        .card__btn-like {
             font-size: 1.6rem;
             max-width: 166px;
+
+            @media (max-width: $lg) {
+                font-size: 1rem;
+                min-height: 28px;
+                max-height: 28px;
+
+                svg {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
         }
     }
 
@@ -74,6 +124,16 @@
 
             background-color: #8960e0;
             border-radius: 50%;
+
+            @media (max-width: $lg) {
+                width: 40px;
+                height: 40px;
+
+                img {
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+            }
         }
 
         .card__title {
@@ -83,6 +143,12 @@
             line-height: 1.2;
             font-weight: 700;
             text-align: center;
+
+            @media (max-width: $lg) {
+                margin-bottom: 7px;
+
+                font-size: 1.6rem;
+            }
         }
 
         .card__text {
@@ -95,6 +161,10 @@
             letter-spacing: 0.06em;
             color: #96afb1;
             text-align: center;
+
+            @media (max-width: $lg) {
+                font-size: 1.2rem;
+            }
         }
     }
 
@@ -108,12 +178,22 @@
         align-items: center;
 
         background-color: #fff;
+
+        @media (max-width: $lg) {
+            width: 209px;
+            height: 208px;
+            margin-bottom: 16px;
+        }
     }
 
     &__image {
         display: block;
         max-width: 100%;
         height: auto;
+
+        @media (max-width: $lg) {
+            max-width: 142px;
+        }
     }
 
     &__title {
@@ -124,6 +204,10 @@
         font-weight: 700;
         letter-spacing: 0.05em;
         line-height: 1;
+
+        @media (max-width: $lg) {
+            font-size: 2rem;
+        }
     }
 
     &__rating {
@@ -136,10 +220,18 @@
     &__stars {
         display: flex;
         gap: 11px;
+
+        @media (max-width: $lg) {
+            gap: 6px;
+        }
     }
 
     &__stars-icon {
         width: 33px;
+
+        @media (max-width: $lg) {
+            width: 18px;
+        }
     }
 
     &__rating-reviews {
@@ -147,33 +239,54 @@
         font-weight: 400;
         letter-spacing: 0.05em;
         color: #96afb1;
+
+        @media (max-width: $lg) {
+            font-size: 1.2rem;
+        }
     }
 
     &__price {
         margin-bottom: 22px;
         display: flex;
+        align-items: center;
         gap: 10px;
     }
 
     &__price-new {
         font-size: 2.4rem;
         font-weight: 800;
+
+        @media (max-width: $lg) {
+            font-size: 1.6rem;
+        }
     }
 
     &__price-old {
         font-size: 2rem;
         color: #96afb1;
         text-decoration: line-through;
+
+        @media (max-width: $lg) {
+            font-size: 1.2rem;
+        }
     }
 
     &__footer {
         display: flex;
         gap: 14px;
+
+        @media (max-width: $lg) {
+            gap: 8px;
+        }
     }
 
     &__btn-cart {
         flex-basis: 70%;
         font-size: 1.8rem;
+
+        @media (max-width: $lg) {
+            font-size: 1.2rem;
+        }
     }
 
     &__btn-like {

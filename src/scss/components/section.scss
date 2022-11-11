@@ -36,6 +36,12 @@
             padding-top: 60px;
             padding-bottom: 66px;
         }
+
+        .section__content {
+            @media (max-width: $lg) {
+                overflow: hidden;
+            }
+        }
     }
 
     &--about {
@@ -61,11 +67,21 @@
             font-size: 1.8rem;
             line-height: 1.7;
             letter-spacing: 0.08em;
+
+            @media (max-width: $lg) {
+                font-size: 1.4rem;
+            }
         }
 
         .section__link {
             color: #0c459a;
             text-decoration: underline;
+        }
+
+        .section__image {
+            @media (max-width: $lg) {
+                max-width: 307px;
+            }
         }
     }
 
@@ -79,5 +95,11 @@
         color: #182d4d;
 
         text-align: center;
+
+        @media (max-width: $lg) {
+            margin-bottom: 32px;
+
+            font-size: 3.6rem;
+        }
     }
 }

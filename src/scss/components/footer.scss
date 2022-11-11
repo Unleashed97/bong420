@@ -1,5 +1,6 @@
 .footer {
     background-color: #000;
+
     &__inner {
         position: relative;
         padding: 38px 0 30px;
@@ -22,6 +23,10 @@
         border-radius: 50%;
         border: 0;
         cursor: pointer;
+
+        @media (max-width: $lg) {
+            right: 50px;
+        }
     }
 
     &__top {

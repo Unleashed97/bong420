@@ -38,6 +38,11 @@ const swiperSale = new Swiper('.swiper--sale', {
             slidesPerView: 3,
             spaceBetween: 50,
         },
+
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 26,
+        },
     },
 
     // Navigation arrows
@@ -59,6 +64,11 @@ const swiperNew = new Swiper('.swiper--new', {
         1440: {
             slidesPerView: 5,
             spaceBetween: 20,
+        },
+
+        767: {
+            slidesPerView: 4,
+            spaceBetween: 25,
         },
     },
 

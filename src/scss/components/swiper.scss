@@ -29,6 +29,12 @@
 
     border-radius: 50%;
 
+    @media (max-width: $lg) {
+        width: 24px;
+        height: 24px;
+        top: 115px;
+    }
+
     &::after {
         display: none;
     }
@@ -44,6 +50,10 @@
 
     background-color: #182d4d;
 
+    @media (max-width: $lg) {
+        left: -12px;
+    }
+
     .icon {
         transform: rotate(180deg);
     }
@@ -53,6 +63,10 @@
     right: -21px;
 
     background-color: #ff4207;
+
+    @media (max-width: $lg) {
+        right: -12px;
+    }
 }
 
 // pagination
@@ -70,6 +84,14 @@
 
     background-color: #000;
     border-radius: 31px;
+
+    @media (max-width: $lg) {
+        left: 233px;
+        width: 55px;
+        height: 16px;
+
+        gap: 2px;
+    }
 }
 
 .banner .swiper-pagination-bullet {
@@ -81,6 +103,11 @@
 
     transition: 0.3s linear;
     opacity: 1;
+
+    @media (max-width: $lg) {
+        width: 11px;
+        height: 11px;
+    }
 }
 
 .banner .swiper-pagination-bullet-active {
