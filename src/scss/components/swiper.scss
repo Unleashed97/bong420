@@ -1,4 +1,9 @@
 .swiper {
+    &--banner {
+        .swiper-slide {
+            display: flex;
+        }
+    }
     &--sale {
         margin-bottom: 30px;
 
@@ -48,4 +53,37 @@
     right: -21px;
 
     background-color: #ff4207;
+}
+
+// pagination
+.banner .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    left: 417px;
+
+    width: fit-content;
+    padding: 4px;
+
+    display: flex;
+    gap: 3px;
+
+    background-color: #000;
+    border-radius: 31px;
+}
+
+.banner .swiper-pagination-bullet {
+    width: 17px;
+    height: 17px;
+    margin: 0 !important;
+
+    border: 2px solid #53545c;
+
+    transition: 0.3s linear;
+    opacity: 1;
+}
+
+.banner .swiper-pagination-bullet-active {
+    background-color: #ff4207;
+    border-color: #ff4207;
 }

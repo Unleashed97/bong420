@@ -4,6 +4,26 @@ customFunctions.handleToTop()
 // vendors
 
 // swiper
+const swiperBanner = new Swiper('.swiper--banner', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    breakpoints: {
+        1440: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+})
+
 const swiperSale = new Swiper('.swiper--sale', {
     // Optional parameters
     direction: 'horizontal',

@@ -1,8 +1,12 @@
 .banner {
     min-height: 292px;
-    padding: 43px 0 58px 0;
 
     display: flex;
+
+    &--main {
+        position: relative;
+        margin: 43px 0 58px 0;
+    }
 
     &--1 {
         min-height: 143px;
