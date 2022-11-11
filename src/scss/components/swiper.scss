@@ -1,6 +1,15 @@
 .swiper {
     &--sale {
         margin-bottom: 30px;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: 180px;
+        }
+    }
+
+    &--new {
+        margin-bottom: 30px;
     }
 }
 
@@ -18,6 +27,11 @@
     &::after {
         display: none;
     }
+}
+
+.swiper-button-prev--new,
+.swiper-button-next--new {
+    top: 111px;
 }
 
 .swiper-button-prev {

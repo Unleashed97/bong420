@@ -7,6 +7,12 @@
         }
     }
 
+    &--new {
+        .section__content {
+            position: relative;
+        }
+    }
+
     &__title {
         margin-bottom: 56px;
 
