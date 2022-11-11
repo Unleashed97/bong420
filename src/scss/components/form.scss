@@ -56,4 +56,40 @@
             border-radius: 4px;
         }
     }
+
+    &--subscribe-news {
+        position: relative;
+
+        .form__input {
+            height: 50px;
+
+            padding: 0 170px 0 26px;
+
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+
+            background: none;
+            border: 2px solid #ff4207;
+            border-radius: 4px;
+
+            &::placeholder {
+                color: #53545c;
+            }
+        }
+
+        .form__btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+
+            width: 157px;
+            height: 50px;
+
+            border-radius: 0 4px 4px 0;
+        }
+    }
 }

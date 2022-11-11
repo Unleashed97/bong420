@@ -3,6 +3,15 @@
     display: flex;
     gap: 14px;
 
+    &--footer {
+        color: #fff;
+        height: fit-content;
+
+        .contacts__item {
+            height: fit-content;
+        }
+    }
+
     &__data {
         display: flex;
         flex-direction: column;

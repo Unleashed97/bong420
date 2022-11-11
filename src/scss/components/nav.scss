@@ -18,6 +18,19 @@
         }
     }
 
+    &--footer {
+        margin-right: 0;
+        .nav__list {
+            flex-direction: column;
+            gap: 11px;
+        }
+
+        .nav__link {
+            padding: 0;
+            color: #fff;
+        }
+    }
+
     &__list {
         display: flex;
     }

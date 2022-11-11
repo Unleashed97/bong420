@@ -1,2 +1,92 @@
 .footer {
+    background-color: #000;
+    &__inner {
+        padding: 38px 0 30px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__about-company {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__logo {
+        display: block;
+        margin-bottom: 13px;
+    }
+
+    &__socials {
+        margin-bottom: 17px;
+    }
+
+    &__years {
+        font-size: 1.4rem;
+        letter-spacing: 0.05em;
+        color: #53545c;
+        text-align: center;
+    }
+
+    &__subscribe-caption {
+        margin-bottom: 12px;
+
+        font-size: 2.4rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        color: #53545c;
+    }
+
+    &__contacts {
+        padding-top: 46px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__found-mistake {
+        font-size: 1.4rem;
+        color: #fff;
+
+        text-decoration: underline;
+    }
+
+    &__warning {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: 0.07em;
+        color: #2a2b38;
+    }
+
+    &__docs {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__docs-icon {
+        margin-right: 6px;
+    }
+
+    &__docs-links {
+        margin-right: 33px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: #96afb1;
+            text-decoration: underline;
+        }
+    }
 }

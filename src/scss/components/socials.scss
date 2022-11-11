@@ -2,6 +2,19 @@
     display: flex;
     gap: 8px;
 
+    &--footer {
+        .socials__link {
+            border-color: #dbff00;
+
+            &:hover {
+                background-color: #dbff00;
+                .socials__icon path {
+                    fill: #000;
+                }
+            }
+        }
+    }
+
     &__item {
     }
 
