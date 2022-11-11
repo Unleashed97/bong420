@@ -3,8 +3,8 @@
 
     &:hover {
         .dropdown__content {
-            display: block;
             opacity: 1;
+            visibility: visible;
         }
     }
 
@@ -20,7 +20,6 @@
         top: 43px;
         z-index: 2;
 
-        display: none;
         min-width: 232px;
         padding: 31px;
 
@@ -31,6 +30,7 @@
             0px 0px 10px rgba(165, 172, 199, 0.4);
 
         opacity: 0;
+        visibility: hidden;
 
         transition: 0.3s linear;
 
