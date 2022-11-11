@@ -38,6 +38,37 @@
         }
     }
 
+    &--about {
+        background-color: #fff;
+
+        .section__inner {
+            padding-top: 42px;
+            padding-bottom: 73px;
+
+            display: flex;
+        }
+        .section__content {
+            padding-top: 18px;
+        }
+        .section__title {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .section__text {
+            margin-bottom: 20px;
+
+            font-size: 1.8rem;
+            line-height: 1.7;
+            letter-spacing: 0.08em;
+        }
+
+        .section__link {
+            color: #0c459a;
+            text-decoration: underline;
+        }
+    }
+
     &__title {
         margin-bottom: 56px;
 
