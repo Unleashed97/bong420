@@ -55,6 +55,49 @@
         }
     }
 
+    &--advantages {
+        min-height: auto;
+        align-items: center;
+
+        .card__image {
+        }
+
+        .card__image-wrapper {
+            width: 80px;
+            height: 80px;
+
+            margin-bottom: 27px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #8960e0;
+            border-radius: 50%;
+        }
+
+        .card__title {
+            margin-bottom: 15px;
+
+            font-size: 2rem;
+            line-height: 1.2;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .card__text {
+            max-width: 241px;
+
+            flex: 1 0 0;
+            font-size: 1.3rem;
+            line-height: 1.4;
+            font-weight: 400;
+            letter-spacing: 0.06em;
+            color: #96afb1;
+            text-align: center;
+        }
+    }
+
     &__image-wrapper {
         width: 365px;
         height: 366px;

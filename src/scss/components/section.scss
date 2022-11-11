@@ -8,8 +8,24 @@
     }
 
     &--new {
+        margin-bottom: 40px;
+
         .section__content {
             position: relative;
+        }
+    }
+
+    &--advantages {
+        background-color: #f6feff;
+
+        .section__inner {
+            padding-top: 60px;
+            padding-bottom: 25px;
+        }
+
+        .section__content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 
