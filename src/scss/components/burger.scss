@@ -12,6 +12,18 @@
     border: 0;
     cursor: pointer;
 
+    &.active {
+        .burger__item:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .burger__item:nth-child(2) {
+            opacity: 0;
+        }
+        .burger__item:nth-child(3) {
+            transform: translateY(-8px) rotate(135deg);
+        }
+    }
+
     &__icon {
         width: 29px;
         height: 20px;
