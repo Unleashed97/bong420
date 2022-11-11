@@ -127,7 +127,7 @@
 
                 <ul class="user-controls">
                     <li class="user-controls__item">
-                        <div class="dropdown">
+                        <div class="dropdown dropdown--user active">
                             <button type="button" class="btn user-controls__btn dropdown__btn">
                                 <img src="img/icons/user.svg" class="btn__icon" alt="">
                                 Пользователь
@@ -158,11 +158,140 @@
                         </button>
                     </li>
                     <li class="user-controls__item">
-                        <button type="button" class="btn user-controls__btn">
-                            <img src="img/icons/cart.svg" class="btn__icon" alt="">
-                            Корзина
-                            <span class="user-controls__btn-dot orange"></span>
-                        </button>
+                        <div class="dropdown dropdown--cart active">
+                            <button type="button" class="btn user-controls__btn dropdown__btn">
+                                <img src="img/icons/cart.svg" class="btn__icon" alt="">
+                                Корзина
+                                <span class="user-controls__btn-dot orange"></span>
+                            </button>
+
+                            <div class="dropdown__content">
+
+                                <button type="button" class="btn dropdown__close">
+                                    <img src="img/icons/close.svg" alt="крестик">
+                                </button>
+
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                    <span class="dropdown__item-price-old">18 999 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                    <span class="dropdown__item-price-old">18 999 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                    <span class="dropdown__item-price-old">18 999 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                    <span class="dropdown__item-price-old">18 999 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="dropdown__cart">
+                                    <div class="dropdown__cart-row">
+                                        <span class="dropdown__cart-caption">Товары 5 шт.</span>
+                                        <span class="dropdown__cart-total">21 200 ₽</span>
+                                    </div>
+                                    <div class="dropdown__cart-row">
+                                        <span class="dropdown__cart-caption">Доставка</span>
+                                        <span class="dropdown__cart-total">3 640 ₽</span>
+                                    </div>
+
+                                    <div class="dropdown__cart-price">
+                                        <span class="dropdown__cart-price-caption">
+                                            СУММА:
+                                        </span>
+                                        <span class="dropdown__cart-price-value">12 560 ₽</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn--lg btn--black dropdown__cart-btn-to-cart">В корзину</a>
+                                <a href="#" class="btn btn--lg btn--outline dropdown__cart-btn-to-shop">
+                                    К ПОКУПКАМ →
+                                </a>
+
+                                <button type="button" class="btn dropdown__cart-clear">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
+                                        fill="none">
+                                        <path d="M1 4.97559H2.77778H17" stroke="#96AFB1" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M5.44303 4.97344V3.37344C5.44303 2.94909 5.63034 2.54212 5.96373 2.24207C6.29713 1.94201 6.74932 1.77344 7.22081 1.77344H10.7764C11.2479 1.77344 11.7 1.94201 12.0334 2.24207C12.3668 2.54212 12.5541 2.94909 12.5541 3.37344V4.97344M15.2208 4.97344V16.1734C15.2208 16.5978 15.0335 17.0048 14.7001 17.3048C14.3667 17.6049 13.9145 17.7734 13.443 17.7734H4.55414C4.08265 17.7734 3.63046 17.6049 3.29707 17.3048C2.96367 17.0048 2.77637 16.5978 2.77637 16.1734V4.97344H15.2208Z"
+                                            stroke="#96AFB1" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                    <span>Очистить корзину</span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
