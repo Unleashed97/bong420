@@ -1,0 +1,37 @@
+.swiper {
+    &--sale {
+        margin-bottom: 30px;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 180px;
+    z-index: 1;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    &::after {
+        display: none;
+    }
+}
+
+.swiper-button-prev {
+    left: -21px;
+
+    background-color: #182d4d;
+
+    .icon {
+        transform: rotate(180deg);
+    }
+}
+
+.swiper-button-next {
+    right: -21px;
+
+    background-color: #ff4207;
+}

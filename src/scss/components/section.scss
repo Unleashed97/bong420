@@ -1,0 +1,19 @@
+.section {
+    &--sale {
+        .section__content {
+            position: relative;
+        }
+    }
+
+    &__title {
+        margin-bottom: 56px;
+
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.05rem;
+        color: #182d4d;
+
+        text-align: center;
+    }
+}
