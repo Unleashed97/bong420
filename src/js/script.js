@@ -34,14 +34,24 @@ const swiperSale = new Swiper('.swiper--sale', {
 
     breakpoints: {
         // when window width is >= 320px
+
         1440: {
             slidesPerView: 3,
             spaceBetween: 50,
+        },
+        999: {
+            slidesPerView: 3,
+            spaceBetween: 20,
         },
 
         767: {
             slidesPerView: 3,
             spaceBetween: 26,
+        },
+
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
         },
     },
 
@@ -66,9 +76,18 @@ const swiperNew = new Swiper('.swiper--new', {
             spaceBetween: 20,
         },
 
-        767: {
+        999: {
             slidesPerView: 4,
+            spaceBetween: 20,
+        },
+
+        767: {
+            slidesPerView: 5,
             spaceBetween: 25,
+        },
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
         },
     },
 

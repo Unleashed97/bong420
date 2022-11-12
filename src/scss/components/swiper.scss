@@ -2,6 +2,12 @@
     &--banner {
         .swiper-slide {
             display: flex;
+
+            @media (max-width: 576px) {
+                flex-direction: column;
+                gap: 16px;
+                height: 350px;
+            }
         }
     }
     &--sale {
@@ -29,10 +35,15 @@
 
     border-radius: 50%;
 
-    @media (max-width: $lg) {
+    @media (max-width: 999px) {
         width: 24px;
         height: 24px;
         top: 115px;
+    }
+    @media (max-width: 999px) {
+        width: 24px;
+        height: 24px;
+        top: 81px;
     }
 
     &::after {
@@ -47,7 +58,7 @@
 
 .swiper-button-prev--new,
 .swiper-button-next--new {
-    top: 111px;
+    top: 81px;
 }
 
 .swiper-button-prev {
@@ -55,7 +66,7 @@
 
     background-color: #182d4d;
 
-    @media (max-width: $lg) {
+    @media (max-width: 999px) {
         left: -12px;
     }
 
@@ -69,7 +80,7 @@
 
     background-color: #ff4207;
 
-    @media (max-width: $lg) {
+    @media (max-width: 999px) {
         right: -12px;
     }
 }
@@ -90,12 +101,25 @@
     background-color: #000;
     border-radius: 31px;
 
-    @media (max-width: $lg) {
+    @media (max-width: 999px) {
         left: 233px;
         width: 55px;
         height: 16px;
 
+        padding: 2px;
+
         gap: 2px;
+    }
+
+    @media (max-width: $md) {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    @media (max-width: 576px) {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -109,7 +133,7 @@
     transition: 0.3s linear;
     opacity: 1;
 
-    @media (max-width: $lg) {
+    @media (max-width: 999px) {
         width: 11px;
         height: 11px;
     }

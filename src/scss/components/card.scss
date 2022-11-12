@@ -5,8 +5,13 @@
     max-width: 365px;
     min-height: 642px;
 
-    @media (max-width: $lg) {
+    @media (max-width: 999px) {
+        max-width: 209px;
         min-height: 409px;
+    }
+    @media (max-width: 576px) {
+        max-width: 140px;
+        min-height: 304px;
     }
 
     &--sale {
@@ -22,6 +27,29 @@
             color: #fff;
 
             background-color: #8960e0;
+
+            @media (max-width: 999px) {
+                width: 48px;
+                height: 24px;
+
+                font-size: 1.4rem;
+            }
+
+            @media (max-width: 576px) {
+                width: 44px;
+                height: 22px;
+
+                font-size: 1.2rem;
+            }
+        }
+
+        .card__btn-like {
+            svg {
+                @media (max-width: 999px) {
+                    max-width: 18px;
+                    max-height: 18px;
+                }
+            }
         }
     }
 
@@ -29,7 +57,8 @@
         min-height: 504px;
         max-width: 223px;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
+            max-width: 140px;
             min-height: 318px;
         }
 
@@ -39,8 +68,8 @@
 
             margin-bottom: 29px;
 
-            @media (max-width: $lg) {
-                width: 140px;
+            @media (max-width: 999px) {
+                max-width: 140px;
                 height: 140px;
             }
         }
@@ -56,12 +85,19 @@
             color: #000;
 
             background-color: #dbff00;
+
+            @media (max-width: 999px) {
+                width: 41px;
+                height: 18px;
+
+                font-size: 1.2rem;
+            }
         }
 
         .card__image {
             max-width: 147px;
 
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 max-width: 103px;
             }
         }
@@ -72,7 +108,7 @@
             font-size: 2.2rem;
             line-height: 1.2;
 
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 margin-bottom: 4px;
 
                 font-size: 1.4rem;
@@ -92,14 +128,14 @@
             width: 22px;
             height: 22px;
 
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 width: 13px;
                 height: 13px;
             }
         }
 
         .card__rating-reviews {
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 font-size: 1rem;
             }
         }
@@ -107,7 +143,7 @@
         .card__price {
             margin-bottom: 17px;
 
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 font-size: 1.4rem;
             }
         }
@@ -122,7 +158,7 @@
             font-size: 1.6rem;
             max-width: 166px;
 
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 font-size: 1rem;
                 height: 28px;
 
@@ -157,6 +193,8 @@
             @media (max-width: $lg) {
                 width: 40px;
                 height: 40px;
+
+                margin-bottom: 5px;
 
                 img {
                     max-width: 20px;
@@ -200,7 +238,7 @@
     &__image-wrapper {
         position: relative;
 
-        width: 365px;
+        max-width: 365px;
         height: 366px;
         margin-bottom: 22px;
 
@@ -210,10 +248,15 @@
 
         background-color: #fff;
 
-        @media (max-width: $lg) {
-            width: 209px;
+        @media (max-width: 999px) {
+            max-width: 209px;
             height: 208px;
             margin-bottom: 16px;
+        }
+        @media (max-width: 576px) {
+            max-width: 140px;
+            height: 140px;
+            margin-bottom: 5px;
         }
     }
 
@@ -235,8 +278,11 @@
         max-width: 100%;
         height: auto;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             max-width: 142px;
+        }
+        @media (max-width: 576px) {
+            max-width: 103px;
         }
     }
 
@@ -249,8 +295,12 @@
         letter-spacing: 0.05em;
         line-height: 1;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             font-size: 2rem;
+        }
+        @media (max-width: 576px) {
+            font-size: 1.4rem;
+            margin-bottom: 4px;
         }
     }
 
@@ -265,8 +315,11 @@
         display: flex;
         gap: 11px;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             gap: 6px;
+        }
+        @media (max-width: 576px) {
+            gap: 1px;
         }
     }
 
@@ -277,8 +330,11 @@
             fill: #8960e0;
         }
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             width: 18px;
+        }
+        @media (max-width: 576px) {
+            width: 13px;
         }
     }
 
@@ -288,8 +344,11 @@
         letter-spacing: 0.05em;
         color: #96afb1;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             font-size: 1.2rem;
+        }
+        @media (max-width: 576px) {
+            font-size: 1rem;
         }
     }
 
@@ -298,14 +357,22 @@
         display: flex;
         align-items: center;
         gap: 10px;
+
+        @media (max-width: 576px) {
+            gap: 6px;
+            margin-bottom: 8px;
+        }
     }
 
     &__price-new {
         font-size: 2.4rem;
         font-weight: 800;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             font-size: 1.6rem;
+        }
+        @media (max-width: 999px) {
+            font-size: 1.4rem;
         }
     }
 
@@ -314,7 +381,7 @@
         color: #96afb1;
         text-decoration: line-through;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             font-size: 1.2rem;
         }
     }
@@ -323,7 +390,7 @@
         display: flex;
         gap: 14px;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             gap: 8px;
         }
     }
@@ -332,7 +399,7 @@
         flex-basis: 70%;
         font-size: 1.8rem;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             font-size: 1.2rem;
         }
     }

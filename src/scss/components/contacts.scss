@@ -3,6 +3,12 @@
     display: flex;
     gap: 14px;
 
+    &--header {
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+
     &--footer {
         color: #fff;
         height: fit-content;
@@ -24,7 +30,7 @@
         flex-wrap: wrap;
         gap: 11px 9px;
 
-        @media (max-width: $lg) {
+        @media (max-width: 1200px) {
             display: none;
         }
     }

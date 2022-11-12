@@ -1,5 +1,5 @@
 .banner {
-    min-height: 292px;
+    max-height: 292px;
 
     display: flex;
 
@@ -7,29 +7,42 @@
         position: relative;
         margin: 43px 0 58px 0;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             max-width: 700px;
             max-height: 165px;
-            min-height: 165px;
 
             margin: 36px auto;
         }
 
+        @media (max-width: 576px) {
+            max-height: 100%;
+            .banner__sale,
+            .banner__delivery {
+                min-height: 158px;
+
+                flex-basis: 100%;
+            }
+
+            .banner__title {
+                font-size: 2rem;
+            }
+        }
+
         .banner__title {
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 font-size: 1.9rem;
             }
         }
 
         .banner__image {
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 max-width: 249px;
                 max-height: 80px;
             }
         }
 
         .banner__sale-btn {
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 max-width: 183px;
                 min-height: 35px;
 
@@ -55,9 +68,20 @@
         background-position: center;
         background-size: auto, cover;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             min-height: 83px;
             padding: 17px 24px;
+
+            background-size: 160px, cover;
+        }
+
+        @media (max-width: 576px) {
+            min-height: 125px;
+            padding: 11px 15px;
+
+            flex-direction: column;
+
+            background-size: 160px, cover;
         }
 
         .banner__title {
@@ -69,9 +93,13 @@
             line-height: 1.2;
             color: #fff;
 
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 max-width: 268px;
                 font-size: 1.5rem;
+            }
+            @media (max-width: 576px) {
+                max-width: 165px;
+                font-size: 1.4rem;
             }
 
             strong {
@@ -79,8 +107,11 @@
                 font-weight: 800;
                 color: #dbff00;
 
-                @media (max-width: $lg) {
+                @media (max-width: 999px) {
                     font-size: 2.8rem;
+                }
+                @media (max-width: 576px) {
+                    font-size: 2.2rem;
                 }
             }
         }
@@ -91,11 +122,15 @@
             height: 64px;
             margin-top: 10px;
 
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 max-width: 180px;
 
                 font-size: 1.2rem;
                 height: 31px;
+            }
+
+            @media (max-width: 576px) {
+                margin: 0 auto;
             }
         }
     }
@@ -108,11 +143,17 @@
         background-image: url('../img/banner/2/bg.jpg');
         background-size: cover;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             min-height: 78px;
             max-height: 78px;
 
             padding: 0 34px;
+        }
+        @media (max-width: 576px) {
+            min-height: 202px;
+            max-height: 202px;
+
+            padding: 0 15px;
         }
 
         .banner__inner {
@@ -120,6 +161,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @media (max-width: 576px) {
+                flex-direction: column;
+                justify-content: center;
+            }
         }
 
         .banner__text {
@@ -129,9 +175,15 @@
 
             color: #fff;
 
-            @media (max-width: $lg) {
+            @media (max-width: 999px) {
                 max-width: 245px;
                 font-size: 1.2rem;
+            }
+            @media (max-width: 576px) {
+                max-width: 290px;
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+                text-align: center;
             }
         }
     }
@@ -168,8 +220,18 @@
 
         background-color: #ff4207;
 
-        @media (max-width: $lg) {
-            padding: 22px;
+        @media (max-width: 999px) {
+            padding: 30px;
+        }
+
+        .banner__title {
+            @media (max-width: 576px) {
+                br {
+                    display: none;
+                }
+                max-width: 100%;
+                text-align: center;
+            }
         }
     }
 
@@ -177,10 +239,18 @@
         max-width: 286px;
         margin-top: 24px;
 
-        @media (max-width: $lg) {
+        @media (max-width: 999px) {
             margin-top: 13px;
 
             max-width: 163px;
+            min-height: 35px;
+
+            font-size: 1.2rem;
+        }
+        @media (max-width: 576px) {
+            margin-top: 13px;
+
+            max-width: 100%;
             min-height: 35px;
 
             font-size: 1.2rem;

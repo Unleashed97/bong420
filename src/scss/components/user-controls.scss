@@ -15,7 +15,7 @@
     }
 
     &__btn-text {
-        @media (max-width: $lg) {
+        @media (max-width: 1200px) {
             display: none;
         }
     }

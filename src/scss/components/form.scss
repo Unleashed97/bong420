@@ -4,6 +4,7 @@
             padding: 16px 42px 16px 25px;
 
             width: 416px;
+            height: 54px;
 
             font-family: $family;
             font-size: 1.4rem;
@@ -25,6 +26,10 @@
             @media (max-width: $lg) {
                 width: 242px;
             }
+
+            @media (max-width: 999px) {
+                height: 43px;
+            }
         }
     }
 
@@ -32,6 +37,10 @@
         display: flex;
         width: fit-content;
         position: relative;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
 
         .form__input {
             display: flex;
@@ -55,6 +64,13 @@
 
                 height: 40px;
             }
+            @media (max-width: 576px) {
+                max-width: 290px;
+                height: 50px;
+
+                padding: 2px 21px;
+                margin-bottom: 14px;
+            }
         }
 
         .form__btn {
@@ -76,6 +92,14 @@
                 font-size: 1.2rem;
                 min-height: 33px;
                 max-height: 33px;
+            }
+            @media (max-width: 576px) {
+                position: static;
+                width: 100%;
+                max-width: 290px;
+                font-size: 1.4rem;
+                min-height: 50px;
+                max-height: 50px;
             }
         }
     }

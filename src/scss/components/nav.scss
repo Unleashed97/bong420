@@ -8,13 +8,24 @@
     &--main {
         margin-right: auto;
 
+        @media (max-width: $md) {
+            display: none;
+        }
+
         .nav__list {
             gap: 30px;
+
+            @media (max-width: $lg) {
+                gap: 18px;
+            }
         }
 
         .nav__link {
             display: block;
             padding: 23px 0;
+
+            font-size: 1.6rem;
+            letter-spacing: 0.1em;
 
             @media (max-width: $lg) {
                 font-size: 1.4rem;

@@ -47,7 +47,7 @@
                     </picture>
                 </a>
 
-                <ul class="socials">
+                <ul class="socials socials--header">
                     <li class="socials__item">
                         <a href="#" class="socials__link">
                             <svg class="socials__icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
@@ -84,7 +84,7 @@
                     <input class="form__input" type="search" placeholder="Поиск...">
                 </form>
 
-                <address class="contacts">
+                <address class="contacts contacts--header">
                     <div class="contacts__data">
                         <div class="contacts__item">
                             <img class="contacts__icon" src="img/icons/envelope.svg" alt="конверт">
@@ -729,6 +729,27 @@
     </div>
 </header>
 
+<header class="header--mobile">
+    <button type="button" class="burger">
+        <div class="burger__icon">
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+        </div>
+    </button>
+
+    <form action="/" class="form--search">
+        <input class="form__input" type="search" placeholder="Поиск...">
+    </form>
+
+    <a href="index.html" class="logo header__logo">
+        <picture>
+            <source srcset="img/logo/logo.webp">
+            <img src="img/logo/logo.png" alt="Логотип">
+        </picture>
+    </a>
+</header>
+
     <!-- main -->
     <main>
         <!-- banner -->
@@ -757,7 +778,7 @@
                                 <h2 class="banner__title">Скидки <span class="hightlight-yellow">до 30%</span></h2>
                                 <picture>
                                     <source srcset="img/logo/logo-banner.webp">
-                                    <img src="img/logo/logo-banner.png" alt="">
+                                    <img src="img/logo/logo-banner.png" class="banner__image" alt="">
                                 </picture>
 
                                 <a href="#" class="btn btn--lg btn--orange banner__sale-btn">В каталог</a>
@@ -773,7 +794,7 @@
                                 <h2 class="banner__title">Скидки <span class="hightlight-yellow">до 30%</span></h2>
                                 <picture>
                                     <source srcset="img/logo/logo-banner.webp">
-                                    <img src="img/logo/logo-banner.png" alt="">
+                                    <img src="img/logo/logo-banner.png" class="banner__image" alt="">
                                 </picture>
 
                                 <a href="#" class="btn btn--lg btn--orange banner__sale-btn">В каталог</a>
@@ -789,7 +810,7 @@
                                 <h2 class="banner__title">Скидки <span class="hightlight-yellow">до 30%</span></h2>
                                 <picture>
                                     <source srcset="img/logo/logo-banner.webp">
-                                    <img src="img/logo/logo-banner.png" alt="">
+                                    <img src="img/logo/logo-banner.png" class="banner__image" alt="">
                                 </picture>
 
                                 <a href="#" class="btn btn--lg btn--orange banner__sale-btn">В каталог</a>
@@ -1587,6 +1608,10 @@
                     </ul>
 
                     <span class="footer__years">2016-2022</span>
+
+                    <a href="#" class="footer__found-mistake">
+                        Нашли ошибку?
+                    </a>
                 </div>
 
                 <nav class="nav nav--main nav--footer">
@@ -1646,10 +1671,6 @@
             </div>
 
             <div class="footer__bottom">
-                <a href="#" class="footer__found-mistake">
-                    Нашли ошибку?
-                </a>
-
                 <span class="footer__warning">
                     Для лиц старше 18 лет
                 </span>

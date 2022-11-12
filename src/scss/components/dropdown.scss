@@ -165,10 +165,12 @@
     }
 
     &--menu {
+        position: static;
         .dropdown__content {
-            width: 1238px;
+            max-width: 1238px;
+            width: 100%;
             left: 0;
-            top: 55px;
+            top: 50px;
 
             padding: 33px 58px;
 
@@ -176,6 +178,10 @@
             grid-template-columns: repeat(4, 1fr);
             grid-auto-rows: auto;
             gap: 34px;
+
+            @media (max-width: 999px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
 
             &::after {
                 display: none;
