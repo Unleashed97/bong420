@@ -44,6 +44,10 @@
             border-radius: 6px;
             border: 0;
 
+            &::placeholder {
+                color: #53545c;
+            }
+
             @media (max-width: $lg) {
                 max-width: 390px;
 
