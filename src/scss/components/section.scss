@@ -68,15 +68,17 @@
         background-color: #fff;
 
         .section__inner {
-            padding-top: 42px;
+            padding-top: 40px;
             padding-bottom: 73px;
 
             display: flex;
 
             @media (max-width: 576px) {
-                padding: 30px 0;
+                position: relative;
+                padding: 60px 0 30px;
 
                 flex-direction: column;
+                align-items: center;
             }
         }
         .section__content {
@@ -85,6 +87,13 @@
         .section__title {
             margin-bottom: 20px;
             text-align: left;
+
+            @media (max-width: 576px) {
+                position: absolute;
+                top: 30px;
+                left: 50%;
+                transform: translate(-50%);
+            }
         }
 
         .section__text {
