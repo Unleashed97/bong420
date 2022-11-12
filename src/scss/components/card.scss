@@ -5,6 +5,8 @@
     max-width: 365px;
     min-height: 642px;
 
+    margin: 0 auto;
+
     @media (max-width: 999px) {
         max-width: 209px;
         min-height: 409px;
@@ -401,6 +403,10 @@
 
         @media (max-width: 999px) {
             font-size: 1.2rem;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1rem;
         }
     }
 

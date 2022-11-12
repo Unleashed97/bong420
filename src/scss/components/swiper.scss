@@ -37,6 +37,11 @@
     }
 }
 
+// .swiper-slide {
+//     display: flex;
+//     justify-content: center;
+// }
+
 .swiper-button-prev,
 .swiper-button-next {
     position: absolute;
@@ -53,7 +58,7 @@
         height: 24px;
         top: 115px;
     }
-    @media (max-width: 999px) {
+    @media (max-width: 576px) {
         width: 24px;
         height: 24px;
         top: 81px;
