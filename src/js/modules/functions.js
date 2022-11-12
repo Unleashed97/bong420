@@ -47,3 +47,13 @@ export const handleDropdownsOpen = () => {
         }),
     )
 }
+
+export const handleBurgerClick = () => {
+    const burgerBtn = document.querySelector('.burger--mobile')
+    const menuMobile = document.querySelector('.menu')
+
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('active')
+        menuMobile.classList.toggle('active')
+    })
+}

@@ -16,6 +16,12 @@
     border: 0;
     cursor: pointer;
 
+    &--mobile.active {
+        .burger__item {
+            background-color: #cce1e3;
+        }
+    }
+
     &.active {
         .burger__item:nth-child(1) {
             transform: translateY(8px) rotate(45deg);

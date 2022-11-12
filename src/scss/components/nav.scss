@@ -5,6 +5,26 @@
         }
     }
 
+    &--mobile {
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 55px;
+
+            font-size: 1.7rem;
+            font-weight: 700;
+
+            border-bottom: 1px solid #f3f3f4;
+        }
+    }
+
     &--main {
         margin-right: auto;
 
