@@ -54,6 +54,10 @@ const swiperSale = new Swiper('.swiper--sale', {
             slidesPerView: 2,
             spaceBetween: 10,
         },
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
     },
 
     // Navigation arrows
@@ -89,6 +93,35 @@ const swiperNew = new Swiper('.swiper--new', {
         320: {
             slidesPerView: 2,
             spaceBetween: 10,
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next--new',
+        prevEl: '.swiper-button-prev--new',
+    },
+})
+const swiperAdvantages = new Swiper('.swiper--advantages', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1.5,
+    spaceBetween: 0,
+
+    initialSlide: 4,
+
+    breakpoints: {
+        // when window width is >= 320px
+
+        320: {
+            slidesPerView: 2.5,
+            centeredSlides: true,
+            spaceBetween: 20,
         },
     },
 

@@ -10,6 +10,7 @@
             }
         }
     }
+
     &--sale {
         margin-bottom: 30px;
 
@@ -21,6 +22,18 @@
 
     &--new {
         margin-bottom: 30px;
+    }
+
+    &--advantages {
+        display: none;
+        @media (max-width: 576px) {
+            display: block;
+        }
+
+        .swiper-wrapper {
+            box-shadow: 100px 0px 90px -13px rgba(255, 255, 255, 0.2) inset,
+                -100px 0px 90px -13px rgba(255, 255, 255, 0.2) inset;
+        }
     }
 }
 

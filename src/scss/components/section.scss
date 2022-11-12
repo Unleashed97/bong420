@@ -35,9 +35,10 @@
             grid-template-columns: repeat(4, 1fr);
 
             @media (max-width: 576px) {
-                grid-template-columns: 1fr;
-                gap: 10px;
-                place-items: center;
+                // grid-template-columns: 1fr;
+                // gap: 10px;
+                // place-items: center;
+                display: none;
             }
         }
     }
