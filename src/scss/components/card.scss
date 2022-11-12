@@ -118,13 +118,13 @@
 
         .card__btn-cart,
         .card__btn-like {
+            height: 48px;
             font-size: 1.6rem;
             max-width: 166px;
 
             @media (max-width: $lg) {
                 font-size: 1rem;
-                min-height: 28px;
-                max-height: 28px;
+                height: 28px;
 
                 svg {
                     width: 17px;
