@@ -27,16 +27,10 @@ export const handleDropdownsOpen = () => {
 
     btnList.forEach((btn) =>
         btn.addEventListener('click', () => {
-            btnList.forEach((btn) => {
-                btn.classList.remove('active')
-                const dropdown = btn.closest('.dropdown')
-                dropdown.classList.remove('active')
-            })
-
             const dropdown = btn.closest('.dropdown')
             dropdown.classList.toggle('active')
 
-            btn.classList.add('active')
+            btn.classList.toggle('active')
         }),
     )
 
