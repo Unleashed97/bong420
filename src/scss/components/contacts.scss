@@ -7,6 +7,12 @@
         @media (max-width: $md) {
             display: none;
         }
+
+        .contacts__address {
+            @media (max-width: 1200px) {
+                display: none;
+            }
+        }
     }
 
     &--footer {
@@ -29,10 +35,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 11px 9px;
-
-        @media (max-width: 1200px) {
-            display: none;
-        }
     }
 
     &__item {
