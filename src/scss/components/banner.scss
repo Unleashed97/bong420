@@ -19,6 +19,7 @@
             .banner__sale,
             .banner__delivery {
                 min-height: 158px;
+                max-height: 158px;
 
                 flex-basis: 100%;
             }
@@ -43,7 +44,7 @@
 
         .banner__sale-btn {
             @media (max-width: 999px) {
-                max-width: 183px;
+                max-width: 240px;
                 min-height: 35px;
 
                 font-size: 1.2rem;
@@ -248,9 +249,10 @@
             font-size: 1.2rem;
         }
         @media (max-width: 576px) {
-            margin-top: 13px;
+            margin: 13px auto 0;
 
-            max-width: 100%;
+            max-width: 240px;
+            width: 100%;
             min-height: 35px;
 
             font-size: 1.2rem;

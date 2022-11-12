@@ -11,26 +11,67 @@
 
     &--mobile {
         display: none;
-        justify-content: space-between;
-        align-items: center;
-        gap: 15px;
-
-        max-height: 70px;
-
-        padding: 20px;
-
-        background-color: #fff;
-
-        box-shadow: 0px 0px 1px rgba(49, 70, 124, 0.25),
-            0px 0px 10px rgba(165, 172, 199, 0.4);
 
         @media (max-width: 576px) {
+            display: block;
+        }
+
+        .header__top {
             display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 56px;
+        }
+
+        .header__top-item {
+            display: block;
+            position: relative;
+        }
+
+        .header__top-item-dot {
+            position: absolute;
+            top: 2px;
+            right: -2px;
+            z-index: 1;
+
+            display: block;
+            width: 6px;
+            height: 6px;
+
+            border-radius: 50%;
+        }
+
+        .header__top-item-dot.purple {
+            background-color: #8960e0;
+        }
+        .header__top-item-dot.orange {
+            background-color: #ff4207;
+        }
+
+        .header__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+
+            max-height: 70px;
+
+            padding: 20px;
+
+            background-color: #fff;
+
+            box-shadow: 0px 0px 1px rgba(49, 70, 124, 0.25),
+                0px 0px 10px rgba(165, 172, 199, 0.4);
         }
 
         .form__input {
             max-width: 130px;
             height: 34px;
+
+            padding: 0 26px 0 16px !important;
+
+            background-size: 14px;
+            background-position: right 12px top 50% !important;
         }
 
         .header__logo {

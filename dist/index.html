@@ -730,24 +730,43 @@
 </header>
 
 <header class="header--mobile">
-    <button type="button" class="burger burger--mobile">
-        <div class="burger__icon">
-            <span class="burger__item"></span>
-            <span class="burger__item"></span>
-            <span class="burger__item"></span>
-        </div>
-    </button>
+    <div class="header__top">
+        <a href="index.html" class="header__top-item">
+            <img src="img/icons/header-top/home.svg" alt="">
+        </a>
+        <a href="#" class="header__top-item">
+            <img src="img/icons/header-top/account.svg" alt="">
+        </a>
+        <a href="#" class="header__top-item">
+            <img src="img/icons/header-top/like.svg" alt="">
+            <span class="header__top-item-dot purple"></span>
+        </a>
+        <a href="#" class="header__top-item">
+            <img src="img/icons/header-top/cart.svg" alt="">
+            <span class="header__top-item-dot orange"></span>
+        </a>
+    </div>
 
-    <form action="/" class="form--search">
-        <input class="form__input" type="search" placeholder="Поиск...">
-    </form>
+    <div class="header__bottom">
+        <button type="button" class="burger burger--mobile">
+            <div class="burger__icon">
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+            </div>
+        </button>
 
-    <a href="index.html" class="logo header__logo">
-        <picture>
-            <source srcset="img/logo/logo.webp">
-            <img src="img/logo/logo.png" alt="Логотип">
-        </picture>
-    </a>
+        <form action="/" class="form--search">
+            <input class="form__input" type="search" placeholder="Поиск...">
+        </form>
+
+        <a href="index.html" class="logo header__logo">
+            <picture>
+                <source srcset="img/logo/logo.webp">
+                <img src="img/logo/logo.png" alt="Логотип">
+            </picture>
+        </a>
+    </div>
 </header>
 
 <div class="menu">
