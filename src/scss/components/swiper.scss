@@ -40,6 +40,11 @@
     }
 }
 
+.swiper-button-next {
+    box-shadow: -2px -2px 8px rgba(255, 66, 7, 0.2),
+        2px 2px 8px rgba(255, 66, 7, 0.3);
+}
+
 .swiper-button-prev--new,
 .swiper-button-next--new {
     top: 111px;
