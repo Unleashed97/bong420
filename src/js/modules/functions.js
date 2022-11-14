@@ -69,3 +69,27 @@ export const handleQuantityBtnsClick = () => {
         }),
     )
 }
+
+export const handleTabs = () => {
+    const tabsBtnList = document.querySelectorAll('.tabs__btn')
+
+    tabsBtnList.forEach((btn) =>
+        btn.addEventListener('click', () => {
+            tabsBtnList.forEach((btn) => {
+                const target = btn.getAttribute('data-target')
+
+                const contentBlock = document.getElementById(target)
+
+                btn.classList.remove('active')
+                contentBlock.classList.remove('active')
+            })
+
+            const target = btn.getAttribute('data-target')
+
+            const contentBlock = document.getElementById(target)
+
+            btn.classList.add('active')
+            contentBlock.classList.add('active')
+        }),
+    )
+}

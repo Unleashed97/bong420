@@ -124,6 +124,46 @@
         }
     }
 
+    &--other-goods {
+        margin-bottom: 60px;
+        .section__content {
+            position: relative;
+        }
+    }
+    &--manufacturer-goods {
+        margin-bottom: 96px;
+
+        .section__content {
+            position: relative;
+        }
+    }
+
+    &--sm {
+        .section__title {
+            margin-bottom: 17px;
+
+            font-size: 2.8rem;
+            text-align: left;
+        }
+    }
+
+    &--categories {
+        margin-bottom: 44px;
+
+        .section__content {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    &--recommendations {
+        margin-bottom: 41px;
+
+        .section__content {
+            position: relative;
+        }
+    }
+
     &__title {
         margin-bottom: 56px;
 

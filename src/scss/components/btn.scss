@@ -54,6 +54,25 @@
         }
     }
 
+    &--category {
+        padding: 11px 22px;
+
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: #e9f3f4;
+
+        background-color: #96afb1;
+        border-radius: 4px;
+
+        transition: 0.3s linear;
+
+        &:hover,
+        &.active {
+            background-color: #182d4d;
+        }
+    }
+
     &--black {
         background-color: #000;
         color: #fff;

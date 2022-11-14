@@ -212,6 +212,47 @@
         }
     }
 
+    &--recommendations {
+        min-height: auto;
+        max-width: 200px;
+        .card__image-wrapper {
+            position: relative;
+
+            max-width: 200px;
+            height: 199px;
+
+            margin-bottom: 12px;
+        }
+
+        .card__image-label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+
+            width: 46px;
+            height: 46px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #dbff00;
+        }
+
+        .card__title {
+            margin-bottom: 8px;
+
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+
+        .card__price {
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+    }
+
     &__image-wrapper {
         position: relative;
 

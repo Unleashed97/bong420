@@ -33,7 +33,7 @@
         gap: 15px;
         margin-bottom: 0;
 
-        .ratign__stars {
+        .rating__stars {
             gap: 8px;
         }
 
@@ -43,6 +43,16 @@
 
         .rating__reviews {
             color: #53545c;
+        }
+    }
+
+    &--review {
+        .rating__stars {
+            gap: 1px;
+        }
+
+        .rating__stars-icon {
+            width: 23px;
         }
     }
 

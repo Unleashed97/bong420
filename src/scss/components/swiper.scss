@@ -74,9 +74,22 @@
         2px 2px 8px rgba(255, 66, 7, 0.3);
 }
 
+.swiper-button-prev--recommendations,
+.swiper-button-next--recommendations {
+    top: 100px;
+}
+
 .swiper-button-prev--new,
-.swiper-button-next--new {
-    top: 81px;
+.swiper-button-next--new,
+.swiper-button-prev--other-goods,
+.swiper-button-next--other-goods,
+.swiper-button-prev--manufacturer-goods,
+.swiper-button-next--manufacturer-goods {
+    top: 115px;
+
+    @media (max-width: 999px) {
+        top: 81px;
+    }
 }
 
 .swiper-button-prev {
