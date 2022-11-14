@@ -35,24 +35,51 @@
 
         .rating__stars {
             gap: 8px;
+
+            @media (max-width: 999px) {
+                gap: 6px;
+            }
         }
 
         .rating__stars-icon {
             width: 26px;
+
+            @media (max-width: 999px) {
+                width: 19px;
+            }
         }
 
         .rating__reviews {
             color: #53545c;
+
+            @media (max-width: 999px) {
+                font-size: 1.2rem;
+            }
         }
     }
 
     &--review {
+        margin-bottom: 0;
         .rating__stars {
             gap: 1px;
+
+            @media (max-width: 999px) {
+                gap: 2px;
+            }
+            @media (max-width: 576px) {
+                gap: 5px;
+            }
         }
 
         .rating__stars-icon {
             width: 23px;
+
+            @media (max-width: 999px) {
+                width: 10px;
+            }
+            @media (max-width: 576px) {
+                width: 17px;
+            }
         }
     }
 

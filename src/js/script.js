@@ -91,11 +91,11 @@ const swiperRecommendations = new Swiper('.swiper--recommendations', {
             spaceBetween: 25,
         },
         320: {
-            slidesPerView: 2,
+            slidesPerView: 4,
             spaceBetween: 10,
         },
         0: {
-            slidesPerView: 2,
+            slidesPerView: 4,
             spaceBetween: 10,
         },
     },

@@ -35,6 +35,12 @@
                 -100px 0px 90px -13px rgba(255, 255, 255, 0.2) inset;
         }
     }
+
+    &--recommendations {
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
 }
 
 // .swiper-slide {
@@ -77,6 +83,13 @@
 .swiper-button-prev--recommendations,
 .swiper-button-next--recommendations {
     top: 100px;
+
+    @media (max-width: 999px) {
+        top: 58px;
+    }
+    @media (max-width: 576px) {
+        display: none;
+    }
 }
 
 .swiper-button-prev--new,

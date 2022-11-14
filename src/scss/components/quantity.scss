@@ -10,6 +10,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: 999px) {
+            height: 53px;
+            width: 53px;
+        }
+
+        @media (max-width: 576px) {
+            height: 38px;
+            width: 38px;
+        }
     }
 
     &__btn {

@@ -7,6 +7,10 @@
         line-height: 1.15;
         letter-spacing: 0.05em;
         color: $colors-font-main;
+
+        @media (max-width: 576px) {
+            font-size: 2.2rem;
+        }
     }
 
     &__details {
@@ -25,12 +29,20 @@
     &__details-art {
         font-size: 1.4rem;
         margin-right: 45px;
+
+        @media (max-width: 999px) {
+            font-size: 1.2rem;
+        }
     }
 
     &__details-socials {
         display: flex;
         align-items: center;
         gap: 15px;
+
+        @media (max-width: 999px) {
+            display: none;
+        }
     }
 
     &__details-socials-caption {
@@ -41,10 +53,19 @@
     &__card {
         display: flex;
         gap: 68px;
+
+        @media (max-width: 999px) {
+            gap: 20px;
+        }
+
+        @media (max-width: $md) {
+            flex-direction: column;
+            gap: 23px;
+        }
     }
 
     &__card-image-block {
-        width: 651px;
+        flex-basis: 55%;
     }
 
     &__card-image-block-wrapper {
@@ -53,11 +74,21 @@
         max-width: 651px;
         height: 651px;
 
+        padding: 30px;
+
         display: flex;
         align-items: center;
         justify-content: center;
 
         background-color: #fff;
+
+        @media (max-width: 999px) {
+            height: auto;
+        }
+
+        @media (max-width: $md) {
+            margin: 0 auto;
+        }
 
         .label-wrapper {
             position: absolute;
@@ -99,12 +130,13 @@
     }
 
     &__card-text-block {
-        width: 504px;
+        flex-basis: 45%;
     }
 
     &__card-price {
         display: flex;
         align-items: flex-end;
+        white-space: nowrap;
 
         margin-bottom: 31px;
     }
@@ -116,6 +148,14 @@
         font-weight: 800;
         line-height: 0.9;
         letter-spacing: 0.03em;
+
+        @media (max-width: 999px) {
+            font-size: 3rem;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 2.8rem;
+        }
     }
 
     &__card-price-old {
@@ -124,6 +164,10 @@
         font-size: 2rem;
         text-decoration: line-through;
         color: #96afb1;
+
+        @media (max-width: 999px) {
+            font-size: 1.4rem;
+        }
     }
 
     &__card-price-availableness {
@@ -133,6 +177,14 @@
 
         font-size: 1.4rem;
         color: $colors-font-main;
+
+        @media (max-width: 999px) {
+            margin-left: auto;
+        }
+
+        @media (max-width: $md) {
+            margin-left: 0;
+        }
     }
 
     &__card-controls {
@@ -141,6 +193,10 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+
+        @media (max-width: 999px) {
+            margin-bottom: 12px;
+        }
 
         // btns
         .btn {
@@ -152,11 +208,25 @@
             letter-spacing: 0.1em;
 
             border-radius: 4px;
+
+            @media (max-width: 999px) {
+                height: 53px;
+            }
+            @media (max-width: 576px) {
+                height: 38px;
+            }
         }
         .add-to-cart {
             width: 192px;
 
             font-weight: 800;
+
+            @media (max-width: 999px) {
+                width: 171px;
+            }
+            @media (max-width: 576px) {
+                width: 165px;
+            }
         }
 
         .fast-order {
@@ -166,10 +236,28 @@
 
             background-color: #f6feff;
             border: 2px solid #182d4d;
+
+            @media (max-width: 999px) {
+                width: 207px;
+            }
+            @media (max-width: 576px) {
+                width: 190px;
+            }
         }
 
         .add-to-favorites {
             width: 134px;
+
+            @media (max-width: 999px) {
+                width: 123px;
+
+                svg {
+                    width: 24px;
+                }
+            }
+            @media (max-width: 576px) {
+                width: 91px;
+            }
 
             svg path {
                 stroke: #fff;
@@ -188,6 +276,10 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        @media (max-width: 999px) {
+            margin-bottom: 14px;
+        }
     }
 
     &__card-advantages-item {
@@ -218,6 +310,10 @@
         font-size: 1.4rem;
         line-height: 2.3;
         letter-spacing: 0.08em;
+
+        @media (max-width: 999px) {
+            font-size: 1.2rem;
+        }
     }
 
     &__card-services {
@@ -230,6 +326,10 @@
 
         background-color: #f6feff;
         border-radius: 6px;
+
+        @media (max-width: 999px) {
+            margin-bottom: 21px;
+        }
     }
 
     &__card-services-item {
@@ -242,6 +342,10 @@
         font-size: 1.4rem;
         letter-spacing: 0.08em;
         line-height: 2;
+
+        @media (max-width: 999px) {
+            font-size: 1.2rem;
+        }
 
         a {
             text-decoration: underline;
@@ -258,6 +362,13 @@
 
         font-size: 2.8rem;
         line-height: 1.2;
+
+        @media (max-width: 999px) {
+            font-size: 2.4rem;
+        }
+        @media (max-width: 576px) {
+            font-size: 2.1rem;
+        }
     }
 
     &__card-spec-list {
@@ -276,6 +387,13 @@
 
         font-size: 1.6rem;
         letter-spacing: 0.08em;
+
+        @media (max-width: 999px) {
+            font-size: 1.4rem;
+        }
+        @media (max-width: 576px) {
+            font-size: 1.2rem;
+        }
 
         &--special {
             &::after {
@@ -335,6 +453,10 @@
         gap: 5px;
 
         color: #96afb1;
+
+        @media (max-width: 999px) {
+            font-size: 1.4rem;
+        }
     }
 
     &__card-spec-made-country {
