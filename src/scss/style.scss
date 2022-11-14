@@ -21,6 +21,7 @@ body {
     font-family: $family;
     font-size: 1.6rem;
     color: $colors-font-main;
+    letter-spacing: 0.05em;
 
     background-color: #e9f3f4;
 }
@@ -70,3 +71,7 @@ a {
 @import 'components/swiper.scss';
 @import 'components/dropdown.scss';
 @import 'components/menu.scss';
+@import 'components/breadcrumbs.scss';
+@import 'components/product.scss';
+@import 'components/rating.scss';
+@import 'components/quantity.scss';

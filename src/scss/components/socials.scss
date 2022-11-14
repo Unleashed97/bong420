@@ -33,6 +33,17 @@
         }
     }
 
+    &--product {
+        .socials__link {
+            background-color: #96afb1;
+            border-color: #96afb1;
+        }
+
+        .socials__icon path {
+            fill: #e9f3f4;
+        }
+    }
+
     &__item {
     }
 

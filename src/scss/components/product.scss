@@ -1,0 +1,83 @@
+.product {
+    &__title {
+        margin-bottom: 11px;
+
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.05em;
+        color: $colors-font-main;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 18px;
+
+        color: #96afb1;
+    }
+
+    &__details-rating {
+        margin-right: 22px;
+    }
+
+    &__details-art {
+        font-size: 1.4rem;
+        margin-right: 45px;
+    }
+
+    &__details-socials {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__details-socials-caption {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    &__card {
+    }
+
+    &__card-image-block {
+    }
+
+    &__card-text-block {
+        width: 504px;
+    }
+
+    &__card-price {
+        display: flex;
+        align-items: flex-end;
+
+        margin-bottom: 31px;
+    }
+
+    &__card-price-new {
+        margin-right: 12px;
+
+        font-size: 4.2rem;
+        font-weight: 800;
+        line-height: 0.9;
+        letter-spacing: 0.03em;
+    }
+
+    &__card-price-old {
+        margin-right: 10px;
+
+        font-size: 2rem;
+        text-decoration: line-through;
+        color: #96afb1;
+    }
+
+    &__card-price-availableness {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        font-size: 1.4rem;
+        color: $colors-font-main;
+    }
+}

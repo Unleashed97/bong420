@@ -1,0 +1,41 @@
+.quantity {
+    display: flex;
+
+    &__btn,
+    &__value {
+        width: 60px;
+        height: 60px;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn {
+        background-color: #dce7e9;
+        border: 0;
+        cursor: pointer;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: #96afb1;
+        }
+
+        &.quantity-remove {
+            border-radius: 4px 0 0 4px;
+        }
+
+        &.quantity-add {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+
+    &__value {
+        font-size: 2.4rem;
+        color: $colors-font-main;
+
+        background-color: #fff;
+    }
+}

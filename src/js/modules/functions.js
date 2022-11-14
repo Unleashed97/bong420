@@ -51,3 +51,21 @@ export const handleBurgerClick = () => {
         menuMobile.classList.toggle('active')
     })
 }
+
+export const handleQuantityBtnsClick = () => {
+    const btnList = document.querySelectorAll('.quantity__btn')
+    const quntityValue = document.querySelector('.quantity__value')
+
+    btnList.forEach((btn) =>
+        btn.addEventListener('click', () => {
+            if (btn.classList.contains('quantity-remove')) {
+                if (Number(quntityValue.innerText) > 1) {
+                    quntityValue.innerText = quntityValue.innerText - 1
+                }
+            }
+            if (btn.classList.contains('quantity-add')) {
+                quntityValue.innerText = Number(quntityValue.innerText) + 1
+            }
+        }),
+    )
+}

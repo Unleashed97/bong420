@@ -2,7 +2,7 @@ import * as customFunctions from './modules/functions.js'
 customFunctions.handleToTop()
 customFunctions.handleDropdownsOpen()
 customFunctions.handleBurgerClick()
-
+customFunctions.handleQuantityBtnsClick()
 // vendors
 
 // swiper
