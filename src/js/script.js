@@ -249,3 +249,20 @@ const swiperAdvantages = new Swiper('.swiper--advantages', {
         prevEl: '.swiper-button-prev--new',
     },
 })
+
+const swiperProductGallery = new Swiper('.swiper--product-gallery', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: '.swiper-button-next--product-gallery',
+        prevEl: '.swiper-button-prev--product-gallery',
+    },
+})
+
+const swiperProduct = new Swiper('.swiper--product', {
+    thumbs: {
+        swiper: swiperProductGallery,
+    },
+})
