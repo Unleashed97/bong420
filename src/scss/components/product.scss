@@ -67,6 +67,8 @@
     &__card-image-block {
         flex-basis: 55%;
         max-width: 651px;
+
+        overflow-x: hidden;
     }
 
     &__card-image-block-wrapper {
