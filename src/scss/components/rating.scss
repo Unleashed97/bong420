@@ -33,11 +33,18 @@
         gap: 15px;
         margin-bottom: 0;
 
+        @media (max-width: 576px) {
+            gap: 3px;
+        }
+
         .rating__stars {
             gap: 8px;
 
             @media (max-width: 999px) {
                 gap: 6px;
+            }
+            @media (max-width: 576px) {
+                gap: 4px;
             }
         }
 
@@ -46,6 +53,9 @@
 
             @media (max-width: 999px) {
                 width: 19px;
+            }
+            @media (max-width: 576px) {
+                width: 17px;
             }
         }
 
@@ -115,6 +125,7 @@
         font-weight: 400;
         letter-spacing: 0.05em;
         color: #96afb1;
+        white-space: nowrap;
 
         @media (max-width: 999px) {
             font-size: 1.2rem;

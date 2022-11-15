@@ -1,5 +1,6 @@
 .breadcrumbs {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 29px;
     margin-bottom: 15px;
 
@@ -7,6 +8,8 @@
         font-size: 1.4rem;
         letter-spacing: 0.05em;
         color: #96afb1;
+
+        white-space: nowrap;
 
         @media (max-width: 999px) {
             font-size: 1.2rem;
