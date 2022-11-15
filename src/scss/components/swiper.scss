@@ -55,6 +55,13 @@
         max-width: 651px;
         padding: 0 116px;
 
+        @media (max-width: 999px) {
+            padding: 0 54px;
+        }
+        @media (max-width: 576px) {
+            padding: 0 47px;
+        }
+
         .swiper-slide {
             background-color: #fff;
             display: flex;
