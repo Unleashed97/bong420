@@ -54,6 +54,10 @@ a {
     color: #ff4207;
 }
 
+// main
+main {
+    margin-top: 50px;
+}
 // components
 @import 'components/header.scss';
 @import 'components/footer.scss';
@@ -77,3 +81,6 @@ a {
 @import 'components/quantity.scss';
 @import 'components/tabs.scss';
 @import 'components/review.scss';
+@import 'components/sidebar.scss';
+@import 'components/range-slider.scss';
+@import 'components/catalog.scss';

@@ -96,6 +96,45 @@
         color: #182d4d;
     }
 
+    &--sort {
+        position: relative;
+        width: 169px;
+        height: 40px;
+
+        padding-right: 40px;
+        padding-left: 20px;
+
+        justify-content: flex-start;
+
+        background-color: #fff;
+        border: 2px solid #182d4d;
+        border-radius: 4px;
+
+        .btn__icon {
+            position: absolute;
+            right: 0;
+            top: -2px;
+
+            margin-right: 0;
+
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #182d4d;
+
+            svg {
+                width: 22px;
+                height: 18px;
+
+                transform: rotate(90deg);
+            }
+        }
+    }
+
     &__icon {
         margin-right: 5px;
     }
