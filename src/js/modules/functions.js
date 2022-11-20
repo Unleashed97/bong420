@@ -15,16 +15,6 @@ export const handleDropdownsOpen = () => {
     const btnList = document.querySelectorAll('.dropdown__btn')
     const btnClose = document.querySelectorAll('.dropdown__close')
 
-    // window.addEventListener('click', (e) => {
-    //     console.log(e.target.closest('.dropdown__content'))
-    //     if (!e.target.closest('.dropdown__content')) {
-    //         console.log('here')
-    //         document
-    //             .querySelectorAll('.dropdown')
-    //             .forEach((dropdown) => dropdown.classList.remove('active'))
-    //     }
-    // })
-
     btnList.forEach((btn) =>
         btn.addEventListener('click', () => {
             const dropdown = btn.closest('.dropdown')
@@ -56,42 +46,46 @@ export const handleQuantityBtnsClick = () => {
     const btnList = document.querySelectorAll('.quantity__btn')
     const quntityValue = document.querySelector('.quantity__value')
 
-    btnList.forEach((btn) =>
-        btn.addEventListener('click', () => {
-            if (btn.classList.contains('quantity-remove')) {
-                if (Number(quntityValue.innerText) > 1) {
-                    quntityValue.innerText = quntityValue.innerText - 1
+    if (btnList && quntityValue) {
+        btnList.forEach((btn) =>
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains('quantity-remove')) {
+                    if (Number(quntityValue.innerText) > 1) {
+                        quntityValue.innerText = quntityValue.innerText - 1
+                    }
                 }
-            }
-            if (btn.classList.contains('quantity-add')) {
-                quntityValue.innerText = Number(quntityValue.innerText) + 1
-            }
-        }),
-    )
+                if (btn.classList.contains('quantity-add')) {
+                    quntityValue.innerText = Number(quntityValue.innerText) + 1
+                }
+            }),
+        )
+    }
 }
 
 export const handleTabs = () => {
     const tabsBtnList = document.querySelectorAll('.tabs__btn')
 
-    tabsBtnList.forEach((btn) =>
-        btn.addEventListener('click', () => {
-            tabsBtnList.forEach((btn) => {
+    if (tabsBtnList) {
+        tabsBtnList.forEach((btn) =>
+            btn.addEventListener('click', () => {
+                tabsBtnList.forEach((btn) => {
+                    const target = btn.getAttribute('data-target')
+
+                    const contentBlock = document.getElementById(target)
+
+                    btn.classList.remove('active')
+                    contentBlock.classList.remove('active')
+                })
+
                 const target = btn.getAttribute('data-target')
 
                 const contentBlock = document.getElementById(target)
 
-                btn.classList.remove('active')
-                contentBlock.classList.remove('active')
-            })
-
-            const target = btn.getAttribute('data-target')
-
-            const contentBlock = document.getElementById(target)
-
-            btn.classList.add('active')
-            contentBlock.classList.add('active')
-        }),
-    )
+                btn.classList.add('active')
+                contentBlock.classList.add('active')
+            }),
+        )
+    }
 }
 
 export const handleFilters = () => {
@@ -99,34 +93,44 @@ export const handleFilters = () => {
     const filtersCloseBtn = document.querySelector('.sidebar-filters-close')
     const sidebar = document.querySelector('.sidebar')
 
-    filtersOpenBtn.addEventListener('click', () => {
-        sidebar.classList.add('active')
-    })
+    if (filtersOpenBtn && filtersCloseBtn && sidebar) {
+        filtersOpenBtn.addEventListener('click', () => {
+            sidebar.classList.add('active')
+        })
 
-    filtersCloseBtn.addEventListener('click', () => {
-        sidebar.classList.remove('active')
-    })
+        filtersCloseBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active')
+        })
+    }
 }
 
 // range slider
 export const handleRangeSlider = () => {
     const rangeSliders = document.querySelectorAll('.range-slider')
 
-    rangeSliders.forEach((range, indexRange) => {
-        const rangeCaptionList = range.querySelectorAll(
-            '.range-slider__header-caption',
-        )
+    if (rangeSliders) {
+        rangeSliders.forEach((range, indexRange) => {
+            const rangeCaptionList = range.querySelectorAll(
+                '.range-slider__header-caption',
+            )
 
-        const rangeInputList = range.querySelectorAll('.range-slider__input')
+            const rangeInputList = range.querySelectorAll(
+                '.range-slider__input',
+            )
 
-        rangeInputList.forEach((input, indexInput) =>
-            input.addEventListener('input', () => {
-                if (indexRange === 0) {
-                    rangeCaptionList[indexInput].innerText = `${input.value} ₽`
-                } else {
-                    rangeCaptionList[indexInput].innerText = `${input.value} см`
-                }
-            }),
-        )
-    })
+            rangeInputList.forEach((input, indexInput) =>
+                input.addEventListener('input', () => {
+                    if (indexRange === 0) {
+                        rangeCaptionList[
+                            indexInput
+                        ].innerText = `${input.value} ₽`
+                    } else {
+                        rangeCaptionList[
+                            indexInput
+                        ].innerText = `${input.value} см`
+                    }
+                }),
+            )
+        })
+    }
 }

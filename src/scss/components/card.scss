@@ -1,19 +1,18 @@
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
 
     max-width: 365px;
-    // min-height: 642px;
+    height: 100%;
 
     margin: 0 auto;
 
     @media (max-width: 999px) {
         max-width: 209px;
-        min-height: 409px;
     }
     @media (max-width: 576px) {
         max-width: 140px;
-        min-height: 304px;
     }
 
     &--sale {
@@ -56,12 +55,10 @@
     }
 
     &--new {
-        // min-height: 504px;
         max-width: 223px;
 
         @media (max-width: 999px) {
             max-width: 140px;
-            min-height: 318px;
         }
 
         .card__image-wrapper {

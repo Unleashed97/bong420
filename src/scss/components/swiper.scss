@@ -83,6 +83,11 @@
         }
     }
 }
+
+// card height
+.swiper-slide {
+    height: auto;
+}
 // wrapper for product gallery slider
 .swiper__wrapper {
     max-width: 651px;

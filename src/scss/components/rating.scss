@@ -4,6 +4,10 @@
     gap: 20px;
     align-items: center;
 
+    @media (max-width: 576px) {
+        gap: 5px;
+    }
+
     &--card-new {
         margin-bottom: 9px;
         gap: 8px;
