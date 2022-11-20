@@ -249,6 +249,10 @@
             &::after {
                 display: none;
             }
+
+            @media (max-width: 1439px) {
+                display: block;
+            }
         }
 
         .dropdown__list {
