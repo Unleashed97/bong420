@@ -11,7 +11,7 @@
     @@include('html/partials/header.html')
 
     <!-- main -->
-    <main>
+    <main class="main main--catalog">
 
         <div class="container container--md">
             <!-- banner 1 -->
@@ -35,332 +35,367 @@
                 <div class="section__header">
                     <h2 class="section__title">Вапорайзеры</h2>
 
-                    <div class="dropdown dropdown--sort">
-                        <button type="button" class="btn btn--sort dropdown__btn">
-                            Новинки
-                            <span class="btn__icon">
-                                <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#DBFF00"
-                                        stroke-width="4" stroke-linecap="round" />
-                                </svg>
-                            </span>
-                        </button>
+                    <div class="section__controls">
+                        <div class="dropdown dropdown--sort">
+                            <button type="button" class="btn btn--sort dropdown__btn">
+                                Новинки
+                                <span class="btn__icon">
+                                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#DBFF00"
+                                            stroke-width="4" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </button>
 
-                        <div class="dropdown__content">
-                            <ul class="dropdown__list">
-                                <li class="dropdown__item">
-                                    <button type="button" class="btn dropdown__item-el">
-                                        По умолчанию
-                                    </button>
-                                </li>
-                                <li class="dropdown__item">
-                                    <button type="button" class="btn dropdown__item-el">
-                                        Новинки
-                                    </button>
-                                </li>
-                                <li class="dropdown__item">
-                                    <button type="button" class="btn dropdown__item-el">
-                                        По рейтингу
-                                    </button>
-                                </li>
-                                <li class="dropdown__item">
-                                    <button type="button" class="btn dropdown__item-el">
-                                        По отзывам
-                                    </button>
-                                </li>
-                                <li class="dropdown__item">
-                                    <button type="button" class="btn dropdown__item-el">
-                                        Дешевые
-                                    </button>
-                                </li>
-                                <li class="dropdown__item">
-                                    <button type="button" class="btn dropdown__item-el">
-                                        Дорогие
-                                    </button>
-                                </li>
-                            </ul>
+                            <div class="dropdown__content">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <button type="button" class="btn dropdown__item-el">
+                                            По умолчанию
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <button type="button" class="btn dropdown__item-el">
+                                            Новинки
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <button type="button" class="btn dropdown__item-el">
+                                            По рейтингу
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <button type="button" class="btn dropdown__item-el">
+                                            По отзывам
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <button type="button" class="btn dropdown__item-el">
+                                            Дешевые
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <button type="button" class="btn dropdown__item-el">
+                                            Дорогие
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        <button type="button" class="btn btn--filters-open">
+                            <span class="btn__icon">
+                                <img src="img/icons/filters.svg" alt="">
+                            </span>
+                            фильтры
+                        </button>
                     </div>
                 </div>
 
                 <div class="section__content">
                     <div class="sidebar sidebar--catalog">
-                        <div class="sidebar__block">
-                            <h4 class="sidebar__title">
-                                <span class="sidebar__title-icon">
-                                    <img src="img/icons/info.svg" alt="">
+                        <div class="sidebar__inner">
+                            <button type="button" class="btn sidebar-filters-close">
+                                <span class="btn__icon">
+                                    <img src="img/icons/close.svg" alt="">
                                 </span>
-                                ЦЕНА
-                            </h4>
-                            <div class="sidebar__block-content">
-                                <div class="range-slider">
-                                    <div class="range-slider__header">
-                                        <span class="range-slider__header-min">
+                                Закрыть
+                            </button>
+                            <div class="sidebar__block">
+                                <h4 class="sidebar__title">
+                                    <span class="sidebar__title-icon">
+                                        <img src="img/icons/info.svg" alt="">
 
+                                        <span class="sidebar__title-icon-popup">
+                                            Various versions have evolved over the years, sometimes on purpose
                                         </span>
-                                        <span class="range-slider__header-max">
+                                    </span>
+                                    ЦЕНА
+                                </h4>
+                                <div class="sidebar__block-content">
+                                    <div class="range-slider">
+                                        <div class="range-slider__header">
+                                            <span class="range-slider__header-min">
 
-                                        </span>
-                                    </div>
-                                    <div class="range-slider__body">
-                                        <input type="range" class="range-slider__input" value="3315" min="100"
-                                            max="50000" step="5">
-                                        <input type="range" class="range-slider__input" value="43225">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar__block">
-                            <h4 class="sidebar__title">
-                                <span class="sidebar__title-icon">
-                                    <img src="img/icons/info.svg" alt="">
-                                </span>
-                                Бренды
-                            </h4>
-                            <div class="sidebar__block-content">
-                                <ul class="sidebar__list">
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Arizer</span>
-                                            <span class="sidebar__itme-quantity">14</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Air Vape</span>
-                                            <span class="sidebar__itme-quantity">18</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Boundless</span>
-                                            <span class="sidebar__itme-quantity">3</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Dynavap</span>
-                                            <span class="sidebar__itme-quantity">164</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Da Vinci</span>
-                                            <span class="sidebar__itme-quantity">12</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Dr. Dabber</span>
-                                            <span class="sidebar__itme-quantity">0</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Fire Fly</span>
-                                            <span class="sidebar__itme-quantity">21</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Linx</span>
-                                            <span class="sidebar__itme-quantity">35</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Grenco Science</span>
-                                            <span class="sidebar__itme-quantity">66</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">X-Vape</span>
-                                            <span class="sidebar__itme-quantity">12</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">PAX</span>
-                                            <span class="sidebar__itme-quantity">24</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Storz & Bickel</span>
-                                            <span class="sidebar__itme-quantity">52</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Vivant</span>
-                                            <span class="sidebar__itme-quantity">14</span>
-                                        </button>
-                                    </li>
-                                </ul>
+                                            </span>
+                                            <span class="range-slider__header-max">
 
-                            </div>
-                        </div>
-                        <div class="sidebar__block">
-                            <h4 class="sidebar__title">
-                                <span class="sidebar__title-icon">
-                                    <img src="img/icons/info.svg" alt="">
-                                </span>
-                                Категории
-                            </h4>
-                            <div class="sidebar__block-content">
-                                <ul class="sidebar__list">
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Портативные</span>
-                                            <span class="sidebar__itme-quantity">464</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Стационарные</span>
-                                            <span class="sidebar__itme-quantity">677</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Конвекционные</span>
-                                            <span class="sidebar__itme-quantity">144</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Кондукционные</span>
-                                            <span class="sidebar__itme-quantity">214</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Электронные</span>
-                                            <span class="sidebar__itme-quantity">314</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Механические</span>
-                                            <span class="sidebar__itme-quantity">514</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Для трав</span>
-                                            <span class="sidebar__itme-quantity">1114</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Для масел</span>
-                                            <span class="sidebar__itme-quantity">32</span>
-                                        </button>
-                                    </li>
-                                    <li class="sidebar__item">
-                                        <button type="button" class="btn sidebar__item-btn">
-                                            <span class="sidebar__item-name">Выпареватели</span>
-                                            <span class="sidebar__itme-quantity">14</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="sidebar__block">
-                            <h4 class="sidebar__title">
-                                <span class="sidebar__title-icon">
-                                    <img src="img/icons/info.svg" alt="">
-                                </span>
-                                Высота бонга
-                            </h4>
-                            <div class="sidebar__block-content">
-                                <div class="range-slider">
-                                    <div class="range-slider__header">
-                                        <span class="range-slider__header-min">
-
-                                        </span>
-                                        <span class="range-slider__header-max">
-
-                                        </span>
-                                    </div>
-                                    <div class="range-slider__body">
-                                        <input type="range" class="range-slider__input" value="3315" min="100"
-                                            max="50000" step="5">
-                                        <input type="range" class="range-slider__input" value="43225">
+                                            </span>
+                                        </div>
+                                        <div class="range-slider__body">
+                                            <input type="range" class="range-slider__input" value="3315" min="100"
+                                                max="50000" step="5">
+                                            <input type="range" class="range-slider__input" value="43225">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="sidebar__block">
-                            <h4 class="sidebar__title">
-                                <span class="sidebar__title-icon">
-                                    <img src="img/icons/info.svg" alt="">
-                                </span>
-                                ДИАМЕТР КОЛПАКА
-                            </h4>
-                            <div class="sidebar__block-content">
-                                <label for="" class="form__label">
-                                    <input type="checkbox" class="form__checkbox" name="diam" value="10">
-                                    <span class="form__checkmark"></span>
-                                    <span class="form__label-text">
-                                        10 мм
+                            <div class="sidebar__block">
+                                <h4 class="sidebar__title">
+                                    <span class="sidebar__title-icon">
+                                        <img src="img/icons/info.svg" alt="">
+
+                                        <span class="sidebar__title-icon-popup">
+                                            Various versions have evolved over the years, sometimes on purpose
+                                        </span>
                                     </span>
-                                </label>
-                                <label for="" class="form__label">
-                                    <input type="checkbox" class="form__checkbox" name="diam" value="12">
-                                    <span class="form__checkmark"></span>
-                                    <span class="form__label-text">
-                                        12 мм
-                                    </span>
-                                </label>
-                                <label for="" class="form__label">
-                                    <input type="checkbox" class="form__checkbox" name="diam" value="14.5">
-                                    <span class="form__checkmark"></span>
-                                    <span class="form__label-text">
-                                        14.5 мм
-                                    </span>
-                                </label>
-                                <label for="" class="form__label">
-                                    <input type="checkbox" class="form__checkbox" name="diam" value="18.8">
-                                    <span class="form__checkmark"></span>
-                                    <span class="form__label-text">
-                                        18.8 мм
-                                    </span>
-                                </label>
-                                <label for="" class="form__label">
-                                    <input type="checkbox" class="form__checkbox" name="diam" value="29.2">
-                                    <span class="form__checkmark"></span>
-                                    <span class="form__label-text">
-                                        29.2 мм
-                                    </span>
-                                </label>
+                                    Бренды
+                                </h4>
+                                <div class="sidebar__block-content">
+                                    <ul class="sidebar__list">
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Arizer</span>
+                                                <span class="sidebar__itme-quantity">14</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Air Vape</span>
+                                                <span class="sidebar__itme-quantity">18</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Boundless</span>
+                                                <span class="sidebar__itme-quantity">3</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Dynavap</span>
+                                                <span class="sidebar__itme-quantity">164</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Da Vinci</span>
+                                                <span class="sidebar__itme-quantity">12</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Dr. Dabber</span>
+                                                <span class="sidebar__itme-quantity">0</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Fire Fly</span>
+                                                <span class="sidebar__itme-quantity">21</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Linx</span>
+                                                <span class="sidebar__itme-quantity">35</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Grenco Science</span>
+                                                <span class="sidebar__itme-quantity">66</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">X-Vape</span>
+                                                <span class="sidebar__itme-quantity">12</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">PAX</span>
+                                                <span class="sidebar__itme-quantity">24</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Storz & Bickel</span>
+                                                <span class="sidebar__itme-quantity">52</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Vivant</span>
+                                                <span class="sidebar__itme-quantity">14</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                </div>
                             </div>
-                        </div>
+                            <div class="sidebar__block">
+                                <h4 class="sidebar__title">
+                                    <span class="sidebar__title-icon">
+                                        <img src="img/icons/info.svg" alt="">
+                                        <span class="sidebar__title-icon-popup">
+                                            Various versions have evolved over the years, sometimes on purpose
+                                        </span>
+                                    </span>
+                                    Категории
+                                </h4>
+                                <div class="sidebar__block-content">
+                                    <ul class="sidebar__list">
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Портативные</span>
+                                                <span class="sidebar__itme-quantity">464</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Стационарные</span>
+                                                <span class="sidebar__itme-quantity">677</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Конвекционные</span>
+                                                <span class="sidebar__itme-quantity">144</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Кондукционные</span>
+                                                <span class="sidebar__itme-quantity">214</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Электронные</span>
+                                                <span class="sidebar__itme-quantity">314</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Механические</span>
+                                                <span class="sidebar__itme-quantity">514</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Для трав</span>
+                                                <span class="sidebar__itme-quantity">1114</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Для масел</span>
+                                                <span class="sidebar__itme-quantity">32</span>
+                                            </button>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <button type="button" class="btn sidebar__item-btn">
+                                                <span class="sidebar__item-name">Выпареватели</span>
+                                                <span class="sidebar__itme-quantity">14</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar__block">
+                                <h4 class="sidebar__title">
+                                    <span class="sidebar__title-icon">
+                                        <img src="img/icons/info.svg" alt="">
 
-                        <button type="button" class="btn sidebar-reset-filters-btn">
-                            <span class="btn__icon">
-                                <img src="img/icons/close.svg" alt="">
-                            </span>
-                            <span class="btn__text">
-                                Сбросить фильтры
-                            </span>
-                        </button>
+                                        <span class="sidebar__title-icon-popup">
+                                            Various versions have evolved over the years, sometimes on purpose
+                                        </span>
+                                    </span>
+                                    Высота бонга
+                                </h4>
+                                <div class="sidebar__block-content">
+                                    <div class="range-slider">
+                                        <div class="range-slider__header">
+                                            <span class="range-slider__header-min">
 
-                        <div class="sidebar__banner">
-                            <h5 class="sidebar__banner-title">
-                                Заголовок
-                            </h5>
+                                            </span>
+                                            <span class="range-slider__header-max">
 
-                            <picture>
-                                <source srcset="img/sidebar/bong.webp">
-                                <img src="img/sidebar/bong.png" class="sidebar__banner-image" alt="">
-                            </picture>
+                                            </span>
+                                        </div>
+                                        <div class="range-slider__body">
+                                            <input type="range" class="range-slider__input" value="3315" min="100"
+                                                max="50000" step="5">
+                                            <input type="range" class="range-slider__input" value="43225">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__block">
+                                <h4 class="sidebar__title">
+                                    <span class="sidebar__title-icon">
+                                        <img src="img/icons/info.svg" alt="">
 
-                            <span class="sidebar__banner-text">
-                                Дополнительная инфа
-                            </span>
+                                        <span class="sidebar__title-icon-popup">
+                                            Various versions have evolved over the years, sometimes on purpose
+                                        </span>
+                                    </span>
+                                    ДИАМЕТР КОЛПАКА
+                                </h4>
+                                <div class="sidebar__block-content">
+                                    <label for="" class="form__label">
+                                        <input type="checkbox" class="form__checkbox" name="diam" value="10">
+                                        <span class="form__checkmark"></span>
+                                        <span class="form__label-text">
+                                            10 мм
+                                        </span>
+                                    </label>
+                                    <label for="" class="form__label">
+                                        <input type="checkbox" class="form__checkbox" name="diam" value="12">
+                                        <span class="form__checkmark"></span>
+                                        <span class="form__label-text">
+                                            12 мм
+                                        </span>
+                                    </label>
+                                    <label for="" class="form__label">
+                                        <input type="checkbox" class="form__checkbox" name="diam" value="14.5">
+                                        <span class="form__checkmark"></span>
+                                        <span class="form__label-text">
+                                            14.5 мм
+                                        </span>
+                                    </label>
+                                    <label for="" class="form__label">
+                                        <input type="checkbox" class="form__checkbox" name="diam" value="18.8">
+                                        <span class="form__checkmark"></span>
+                                        <span class="form__label-text">
+                                            18.8 мм
+                                        </span>
+                                    </label>
+                                    <label for="" class="form__label">
+                                        <input type="checkbox" class="form__checkbox" name="diam" value="29.2">
+                                        <span class="form__checkmark"></span>
+                                        <span class="form__label-text">
+                                            29.2 мм
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn sidebar-reset-filters-btn">
+                                <span class="btn__icon">
+                                    <img src="img/icons/close.svg" alt="">
+                                </span>
+                                <span class="btn__text">
+                                    Сбросить фильтры
+                                </span>
+                            </button>
+
+                            <div class="sidebar__banner">
+                                <h5 class="sidebar__banner-title">
+                                    Заголовок
+                                </h5>
+
+                                <picture>
+                                    <source srcset="img/sidebar/bong.webp">
+                                    <img src="img/sidebar/bong.png" class="sidebar__banner-image" alt="">
+                                </picture>
+
+                                <span class="sidebar__banner-text">
+                                    Дополнительная инфа
+                                </span>
+                            </div>
                         </div>
                     </div>
 

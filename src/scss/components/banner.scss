@@ -158,6 +158,48 @@
                 font-size: 48px;
             }
         }
+
+        @media (max-width: 999px) {
+            background-size: 179px, cover;
+
+            display: flex;
+            justify-content: flex-end;
+            .banner__title {
+                max-width: 236px;
+                font-size: 1.8rem;
+
+                strong {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+
+        @media (max-width: 999px) {
+            background-size: 179px, cover;
+            background-position: center;
+            max-height: 74px;
+            min-height: 74px;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: row;
+
+            .banner__title {
+                max-width: 158px;
+                font-size: 1.2rem;
+
+                strong {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .banner__btn {
+                width: 100px;
+                height: 22px;
+                font-size: 1rem;
+            }
+        }
     }
 
     &--catalog2 {
@@ -180,6 +222,48 @@
 
             strong {
                 font-size: 40px;
+            }
+        }
+
+        @media (max-width: 999px) {
+            background-size: 179px, cover;
+
+            display: flex;
+            justify-content: flex-end;
+            .banner__title {
+                max-width: 236px;
+                font-size: 1.8rem;
+
+                strong {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+
+        @media (max-width: 999px) {
+            background-size: 179px, cover;
+            background-position: center;
+            max-height: 74px;
+            min-height: 74px;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: row;
+
+            .banner__title {
+                max-width: 158px;
+                font-size: 1.2rem;
+
+                strong {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .banner__btn {
+                width: 100px;
+                height: 22px;
+                font-size: 1rem;
             }
         }
     }

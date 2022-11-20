@@ -138,4 +138,33 @@
     &__icon {
         margin-right: 5px;
     }
+
+    &.btn--filters-open {
+        display: none;
+        gap: 3px;
+
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #182d4d;
+
+        @media (max-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &.sidebar-filters-close {
+        display: none;
+        margin-bottom: 32px;
+
+        gap: 14px;
+
+        font-size: 1.4rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            display: flex;
+        }
+    }
 }

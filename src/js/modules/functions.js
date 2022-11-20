@@ -93,3 +93,17 @@ export const handleTabs = () => {
         }),
     )
 }
+
+export const handleFilters = () => {
+    const filtersOpenBtn = document.querySelector('.btn--filters-open')
+    const filtersCloseBtn = document.querySelector('.sidebar-filters-close')
+    const sidebar = document.querySelector('.sidebar')
+
+    filtersOpenBtn.addEventListener('click', () => {
+        sidebar.classList.add('active')
+    })
+
+    filtersCloseBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active')
+    })
+}

@@ -57,7 +57,12 @@ a {
 // main
 main {
     margin-top: 50px;
+
+    @media (max-width: 576px) {
+        margin-top: 19px;
+    }
 }
+
 // components
 @import 'components/header.scss';
 @import 'components/footer.scss';
