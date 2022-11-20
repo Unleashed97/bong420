@@ -107,3 +107,26 @@ export const handleFilters = () => {
         sidebar.classList.remove('active')
     })
 }
+
+// range slider
+export const handleRangeSlider = () => {
+    const rangeSliders = document.querySelectorAll('.range-slider')
+
+    rangeSliders.forEach((range, indexRange) => {
+        const rangeCaptionList = range.querySelectorAll(
+            '.range-slider__header-caption',
+        )
+
+        const rangeInputList = range.querySelectorAll('.range-slider__input')
+
+        rangeInputList.forEach((input, indexInput) =>
+            input.addEventListener('input', () => {
+                if (indexRange === 0) {
+                    rangeCaptionList[indexInput].innerText = `${input.value} ₽`
+                } else {
+                    rangeCaptionList[indexInput].innerText = `${input.value} см`
+                }
+            }),
+        )
+    })
+}

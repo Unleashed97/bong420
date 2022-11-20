@@ -5,6 +5,7 @@ customFunctions.handleBurgerClick()
 customFunctions.handleQuantityBtnsClick()
 customFunctions.handleTabs()
 customFunctions.handleFilters()
+customFunctions.handleRangeSlider()
 // vendors
 
 // swiper

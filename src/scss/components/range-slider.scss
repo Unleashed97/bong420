@@ -14,13 +14,26 @@
         line-height: 1.4;
     }
 
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    &__footer-from,
+    &__footer-to {
+        font-size: 1.4rem;
+        color: #96afb1;
+        line-height: 1.4;
+    }
+
     &__body {
         position: relative;
     }
 
     &__input {
         -webkit-appearance: none;
-        border: 1px solid white;
         width: 100%;
         position: absolute;
         left: 0;
@@ -37,10 +50,10 @@
     &__input::-webkit-slider-thumb {
         -webkit-appearance: none;
         border: none;
-        height: 18px;
-        width: 18px;
-        border-radius: 50%;
-        background: #21c1ff;
+        width: 7px;
+        height: 20px;
+        border-radius: 59px;
+        background: #ff4207;
         margin-top: -6px;
         cursor: pointer;
         position: relative;
