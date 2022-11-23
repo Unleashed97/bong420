@@ -271,6 +271,10 @@
     }
 
     &--manufacturers {
+        .section__title {
+            text-align: left;
+            margin-bottom: 30px;
+        }
         .card__list {
             margin-bottom: 40px;
 
