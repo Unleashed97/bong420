@@ -348,6 +348,37 @@
         }
     }
 
+    &--manufacturers {
+        .card__image {
+            display: block;
+
+            max-width: 100%;
+            height: auto;
+        }
+        .card__image-wrapper {
+            height: auto;
+            margin-bottom: 0;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+
+        .card__title {
+            padding: 18px;
+            margin-bottom: 0;
+
+            font-size: 3rem;
+            font-weight: 700;
+
+            @media (max-width: 768px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        background-color: #fff;
+    }
+
     &__image-wrapper {
         position: relative;
 

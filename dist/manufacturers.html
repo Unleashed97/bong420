@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Производители</title>
+</head>
+
+<body>
+    <!-- header include -->
+    <header class="header">
+    <div class="header__top">
+        <div class="container container--md">
+            <div class="header__top-inner">
+                <nav class="nav nav--service">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Сервисная ссылка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Сервисная ссылка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Сервисная ссылка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Сервисная ссылка</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container--md">
+        <div class="header__main">
+            <div class="header__main-top">
+                <a href="index.html" class="logo header__logo">
+                    <picture>
+                        <source srcset="img/logo/logo.webp">
+                        <img src="img/logo/logo.png" alt="Логотип">
+                    </picture>
+                </a>
+
+                <ul class="socials socials--header">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <svg class="socials__icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.943 0.209194L0.815727 5.97132C-0.221083 6.37174 -0.202779 6.93878 0.637913 7.20228L4.51059 8.39578L13.4941 2.80803C13.9112 2.5342 14.2982 2.68919 13.9818 2.96432L6.71234 9.45236L6.43385 13.3958C6.83916 13.3958 7.01567 13.2214 7.22486 13.0148L9.11674 11.2142L13.0391 14.0701C13.7543 14.4705 14.2655 14.2638 14.4564 13.4139L17.0321 1.42594L17.0308 1.42724C17.2583 0.378402 16.6451 -0.041389 15.943 0.209194Z"
+                                    fill="#182D4D" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                width="19px" height="19px">
+                                <path
+                                    d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                                    fill="#182D4D" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <svg class="socials__icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.7526 11.3632C19.7013 11.2691 19.3841 10.5142 17.8579 8.96248C16.2601 7.33765 16.4747 7.60149 18.3992 4.792C19.5713 3.08097 20.04 2.03606 19.8933 1.58937C19.7538 1.16357 18.8917 1.2759 18.8917 1.2759L16.0252 1.29418C16.0252 1.29418 15.8129 1.26283 15.6543 1.36602C15.5005 1.4679 15.4015 1.703 15.4015 1.703C15.4015 1.703 14.9472 3.02742 14.3415 4.1533C13.0644 6.52916 12.5529 6.65455 12.3442 6.50695C11.8589 6.16344 11.9806 5.12507 11.9806 4.38841C11.9806 2.0857 12.2989 1.12569 11.3593 0.877525C11.0469 0.795239 10.818 0.740381 10.0203 0.731239C8.99718 0.719483 8.13031 0.735157 7.64024 0.997689C7.31352 1.17271 7.06193 1.56324 7.21574 1.58545C7.40534 1.61288 7.8346 1.71214 8.06235 2.05174C8.35687 2.48929 8.34614 3.47411 8.34614 3.47411C8.34614 3.47411 8.51546 6.18434 7.95145 6.52132C7.56392 6.75251 7.03331 6.28099 5.89457 4.12457C5.31149 3.02089 4.8703 1.79965 4.8703 1.79965C4.8703 1.79965 4.78564 1.57239 4.63421 1.45092C4.45058 1.30332 4.19302 1.2563 4.19302 1.2563L1.46721 1.27459C1.46721 1.27459 1.05822 1.28765 0.907974 1.48226C0.774426 1.65598 0.897242 2.01386 0.897242 2.01386C0.897242 2.01386 3.03163 7.48263 5.44742 10.2399C7.66409 12.7672 10.18 12.6014 10.18 12.6014H11.32C11.32 12.6014 11.6646 12.5596 11.8399 12.3519C12.002 12.1612 11.9961 11.8033 11.9961 11.8033C11.9961 11.8033 11.9734 10.1275 12.6841 9.88069C13.384 9.63775 14.2831 11.5003 15.2358 12.2174C15.956 12.7594 16.5033 12.6405 16.5033 12.6405L19.0515 12.6014C19.0515 12.6014 20.3846 12.5112 19.7526 11.3632Z"
+                                    fill="#182D4D" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <form action="/" class="form--search">
+                    <input class="form__input" type="search" placeholder="Поиск...">
+                </form>
+
+                <address class="contacts contacts--header">
+                    <div class="contacts__data">
+                        <div class="contacts__item">
+                            <img class="contacts__icon" src="img/icons/envelope.svg" alt="конверт">
+                            <a href="mailto:info@bong420.ru">info@bong420.ru</a>
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/phone.svg" alt="телефон">
+                            <a href="tel:88007072420">8 800 707-24-20</a>
+                        </div>
+                    </div>
+
+                    <div class="contacts__address">
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/geo-tag.svg" alt="">
+                            Москва
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/metro.svg" alt="">
+                            Нижние котлы
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/watch.svg" alt="">
+                            Пн-пт 12:00—19:00
+                        </div>
+                    </div>
+                </address>
+            </div>
+            <div class="header__main-bottom">
+                <div class="dropdown dropdown--menu">
+                    <button type="button" class="burger dropdown__btn">
+                        <div class="burger__icon">
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                        </div>
+
+                        Меню
+                    </button>
+                    <div class="dropdown__content">
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Вапорайзеры</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Бонги</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Аксессуары</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col dropdown__col--special">
+                            <a class="dropdown__col-title">Производители</a>
+                            <a class="dropdown__col-title">Распродажа</a>
+                            <a class="dropdown__col-title">Новинки</a>
+                        </div>
+
+                        <!-- row -->
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Вапорайзеры</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Бонги</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Аксессуары</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Аксессуары</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+
+                        <!-- row -->
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Вапорайзеры</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Бонги</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Аксессуары</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                        <div class="dropdown__col">
+                            <span class="dropdown__col-title">Аксессуары</span>
+                            <ul class="dropdown__col-list">
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <li class="dropdown__col-list-item">
+                                    <a href="#" class="dropdown__col-list-link">
+                                        Lorem Ipsum text
+                                    </a>
+                                </li>
+                                <a href="#">🠗 ещё</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="nav nav--main">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Оплата и доставка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Обмен и возврат</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="user-controls">
+                    <li class="user-controls__item">
+                        <div class="dropdown dropdown--user">
+                            <button type="button" class="btn user-controls__btn dropdown__btn">
+                                <img src="img/icons/user.svg" class="btn__icon" alt="">
+                                <span class="user-controls__btn-text">
+                                    Пользователь
+                                </span>
+                            </button>
+                            <div class="dropdown__content">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__item-el">
+                                            <img src="img/icons/key.svg" class="dropdown__icon" alt="ключ">
+                                            Личный кабинет
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <button type="button" class="btn dropdown__item-el">
+                                            <img src="img/icons/exit.svg" class="dropdown__icon" alt="ключ">
+                                            Выйти
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user-controls__item">
+                        <button type="button" class="btn user-controls__btn">
+                            <img src="img/icons/like.svg" class="btn__icon" alt="">
+                            <span class="user-controls__btn-text">
+                                Избранное
+                            </span>
+                            <span class="user-controls__btn-dot purple"></span>
+                        </button>
+                    </li>
+                    <li class="user-controls__item">
+                        <div class="dropdown dropdown--cart">
+                            <button type="button" class="btn user-controls__btn dropdown__btn">
+                                <img src="img/icons/cart.svg" class="btn__icon" alt="">
+                                <span class="user-controls__btn-text">
+                                    Корзина
+
+                                </span>
+                                <span class="user-controls__btn-dot orange"></span>
+                            </button>
+
+                            <div class="dropdown__content">
+
+                                <button type="button" class="btn dropdown__close">
+                                    <img src="img/icons/close.svg" alt="крестик">
+                                </button>
+
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                    <span class="dropdown__item-price-old">18 999 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                    <span class="dropdown__item-price-old">18 999 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                    <span class="dropdown__item-price-old">18 999 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <img src="img/cart/dropdown/vapovizer.jpg" alt="">
+                                        <div class="dropdown__item-text-block">
+                                            <p class="dropdown__item-caption">Вапорайзер Arizer</p>
+                                            <div>
+                                                <span class="dropdown__item-price">
+                                                    <span class="dropdown__item-price-new">12 560 ₽</span>
+                                                    <span class="dropdown__item-price-old">18 999 ₽</span>
+                                                </span>
+                                                <span class="dropdown__item-counter">1 шт.</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn dropdown__item-remove">
+                                            <img src="img/icons/trash.svg" class="dropdown__item-icon" alt="">
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="dropdown__cart">
+                                    <div class="dropdown__cart-row">
+                                        <span class="dropdown__cart-caption">Товары 5 шт.</span>
+                                        <span class="dropdown__cart-total">21 200 ₽</span>
+                                    </div>
+                                    <div class="dropdown__cart-row">
+                                        <span class="dropdown__cart-caption">Доставка</span>
+                                        <span class="dropdown__cart-total">3 640 ₽</span>
+                                    </div>
+
+                                    <div class="dropdown__cart-price">
+                                        <span class="dropdown__cart-price-caption">
+                                            СУММА:
+                                        </span>
+                                        <span class="dropdown__cart-price-value">12 560 ₽</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn--lg btn--black dropdown__cart-btn-to-cart">В корзину</a>
+                                <a href="#" class="btn btn--lg btn--outline dropdown__cart-btn-to-shop">
+                                    К ПОКУПКАМ →
+                                </a>
+
+                                <button type="button" class="btn dropdown__cart-clear">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
+                                        fill="none">
+                                        <path d="M1 4.97559H2.77778H17" stroke="#96AFB1" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M5.44303 4.97344V3.37344C5.44303 2.94909 5.63034 2.54212 5.96373 2.24207C6.29713 1.94201 6.74932 1.77344 7.22081 1.77344H10.7764C11.2479 1.77344 11.7 1.94201 12.0334 2.24207C12.3668 2.54212 12.5541 2.94909 12.5541 3.37344V4.97344M15.2208 4.97344V16.1734C15.2208 16.5978 15.0335 17.0048 14.7001 17.3048C14.3667 17.6049 13.9145 17.7734 13.443 17.7734H4.55414C4.08265 17.7734 3.63046 17.6049 3.29707 17.3048C2.96367 17.0048 2.77637 16.5978 2.77637 16.1734V4.97344H15.2208Z"
+                                            stroke="#96AFB1" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Очистить корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- 
+<header class="header--md">
+    <nav class="nav nav--mobile">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <span>Бонги</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Тюнинг</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Бумажки для самокруток</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Вапорайзеры</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>WAX</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Производители</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Распродажа</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Все категории</span>
+            </li>
+        </ul>
+    </nav>
+</header> -->
+
+<header class="header--mobile">
+    <div class="header__top">
+        <a href="index.html" class="header__top-item">
+            <img src="img/icons/header-top/home.svg" alt="">
+        </a>
+        <a href="#" class="header__top-item">
+            <img src="img/icons/header-top/account.svg" alt="">
+        </a>
+        <a href="#" class="header__top-item">
+            <img src="img/icons/header-top/like.svg" alt="">
+            <span class="header__top-item-dot purple"></span>
+        </a>
+        <a href="#" class="header__top-item">
+            <img src="img/icons/header-top/cart.svg" alt="">
+            <span class="header__top-item-dot orange"></span>
+        </a>
+    </div>
+
+    <div class="header__bottom">
+        <button type="button" class="burger burger--mobile">
+            <div class="burger__icon">
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+            </div>
+        </button>
+
+        <form action="/" class="form--search">
+            <input class="form__input" type="search" placeholder="Поиск...">
+        </form>
+
+        <a href="index.html" class="logo header__logo">
+            <picture>
+                <source srcset="img/logo/logo.webp">
+                <img src="img/logo/logo.png" alt="Логотип">
+            </picture>
+        </a>
+    </div>
+</header>
+
+<div class="menu">
+    <address class="contacts contacts--header">
+        <div class="contacts__data">
+            <div class="contacts__item">
+                <img class="contacts__icon" src="img/icons/envelope.svg" alt="конверт">
+                <a href="mailto:info@bong420.ru">info@bong420.ru</a>
+            </div>
+            <div class="contacts__item ">
+                <img class="contacts__icon" src="img/icons/phone.svg" alt="телефон">
+                <a href="tel:88007072420">8 800 707-24-20</a>
+            </div>
+        </div>
+
+        <div class="contacts__address">
+            <div class="contacts__item ">
+                <img class="contacts__icon" src="img/icons/geo-tag.svg" alt="">
+                Москва
+            </div>
+            <div class="contacts__item ">
+                <img class="contacts__icon" src="img/icons/metro.svg" alt="">
+                Нижние котлы
+            </div>
+            <div class="contacts__item ">
+                <img class="contacts__icon" src="img/icons/watch.svg" alt="">
+                Пн-пт 12:00—19:00
+            </div>
+        </div>
+    </address>
+
+    <ul class="socials socials--header">
+        <li class="socials__item">
+            <a href="#" class="socials__link">
+                <svg class="socials__icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.943 0.209194L0.815727 5.97132C-0.221083 6.37174 -0.202779 6.93878 0.637913 7.20228L4.51059 8.39578L13.4941 2.80803C13.9112 2.5342 14.2982 2.68919 13.9818 2.96432L6.71234 9.45236L6.43385 13.3958C6.83916 13.3958 7.01567 13.2214 7.22486 13.0148L9.11674 11.2142L13.0391 14.0701C13.7543 14.4705 14.2655 14.2638 14.4564 13.4139L17.0321 1.42594L17.0308 1.42724C17.2583 0.378402 16.6451 -0.041389 15.943 0.209194Z"
+                        fill="#182D4D" />
+                </svg>
+            </a>
+        </li>
+        <li class="socials__item">
+            <a href="#" class="socials__link">
+                <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="19px"
+                    height="19px">
+                    <path
+                        d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                        fill="#182D4D" />
+                </svg>
+            </a>
+        </li>
+        <li class="socials__item">
+            <a href="#" class="socials__link">
+                <svg class="socials__icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.7526 11.3632C19.7013 11.2691 19.3841 10.5142 17.8579 8.96248C16.2601 7.33765 16.4747 7.60149 18.3992 4.792C19.5713 3.08097 20.04 2.03606 19.8933 1.58937C19.7538 1.16357 18.8917 1.2759 18.8917 1.2759L16.0252 1.29418C16.0252 1.29418 15.8129 1.26283 15.6543 1.36602C15.5005 1.4679 15.4015 1.703 15.4015 1.703C15.4015 1.703 14.9472 3.02742 14.3415 4.1533C13.0644 6.52916 12.5529 6.65455 12.3442 6.50695C11.8589 6.16344 11.9806 5.12507 11.9806 4.38841C11.9806 2.0857 12.2989 1.12569 11.3593 0.877525C11.0469 0.795239 10.818 0.740381 10.0203 0.731239C8.99718 0.719483 8.13031 0.735157 7.64024 0.997689C7.31352 1.17271 7.06193 1.56324 7.21574 1.58545C7.40534 1.61288 7.8346 1.71214 8.06235 2.05174C8.35687 2.48929 8.34614 3.47411 8.34614 3.47411C8.34614 3.47411 8.51546 6.18434 7.95145 6.52132C7.56392 6.75251 7.03331 6.28099 5.89457 4.12457C5.31149 3.02089 4.8703 1.79965 4.8703 1.79965C4.8703 1.79965 4.78564 1.57239 4.63421 1.45092C4.45058 1.30332 4.19302 1.2563 4.19302 1.2563L1.46721 1.27459C1.46721 1.27459 1.05822 1.28765 0.907974 1.48226C0.774426 1.65598 0.897242 2.01386 0.897242 2.01386C0.897242 2.01386 3.03163 7.48263 5.44742 10.2399C7.66409 12.7672 10.18 12.6014 10.18 12.6014H11.32C11.32 12.6014 11.6646 12.5596 11.8399 12.3519C12.002 12.1612 11.9961 11.8033 11.9961 11.8033C11.9961 11.8033 11.9734 10.1275 12.6841 9.88069C13.384 9.63775 14.2831 11.5003 15.2358 12.2174C15.956 12.7594 16.5033 12.6405 16.5033 12.6405L19.0515 12.6014C19.0515 12.6014 20.3846 12.5112 19.7526 11.3632Z"
+                        fill="#182D4D" />
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <nav class="nav nav--mobile">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <span>Бонги</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Тюнинг</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Бумажки для самокруток</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Вапорайзеры</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>WAX</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Производители</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Распродажа</span>
+
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.58076 14.7031L8.41797 8.54523L1.58076 1.70312" stroke="#182D4D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+
+            </li>
+            <li class="nav__item">
+                <span>Все категории</span>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="nav nav--main">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#" class="nav__link">Оплата и доставка</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Обмен и возврат</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">FAQ</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+    <!-- main -->
+    <main class="main main--catalog">
+
+        <div class="container container--md">
+            <!-- breadcrumbs -->
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Производители
+                </li>
+            </ul>
+
+            <!-- section catalog -->
+            <div class="section section section--manufacturers">
+                <div class="section__header">
+                    <h2 class="section__title">Производители</h2>
+                </div>
+
+                <div class="section__content">
+                    <div class="card__list">
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/arizer.webp">
+                                    <img class="card__image" src="img/section/manufacturers/arizer.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Arizer</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/air-vape.webp">
+                                    <img class="card__image" src="img/section/manufacturers/air-vape.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Air Vape</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/blaze.webp">
+                                    <img class="card__image" src="img/section/manufacturers/blaze.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Blaze</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/Boundless.webp">
+                                    <img class="card__image" src="img/section/manufacturers/boundless.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Boundless</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/arizer.webp">
+                                    <img class="card__image" src="img/section/manufacturers/arizer.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Arizer</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/arizer.webp">
+                                    <img class="card__image" src="img/section/manufacturers/arizer.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Arizer</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/air-vape.webp">
+                                    <img class="card__image" src="img/section/manufacturers/air-vape.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Air Vape</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/blaze.webp">
+                                    <img class="card__image" src="img/section/manufacturers/blaze.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Blaze</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/Boundless.webp">
+                                    <img class="card__image" src="img/section/manufacturers/boundless.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Boundless</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/arizer.webp">
+                                    <img class="card__image" src="img/section/manufacturers/arizer.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Arizer</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/arizer.webp">
+                                    <img class="card__image" src="img/section/manufacturers/arizer.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Arizer</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/air-vape.webp">
+                                    <img class="card__image" src="img/section/manufacturers/air-vape.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Air Vape</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/blaze.webp">
+                                    <img class="card__image" src="img/section/manufacturers/blaze.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Blaze</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/Boundless.webp">
+                                    <img class="card__image" src="img/section/manufacturers/boundless.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Boundless</h2>
+                        </article>
+                        <article class="card card--manufacturers">
+                            <div class="card__image-wrapper">
+                                <picture>
+                                    <source srcset="img/section/manufacturers/arizer.webp">
+                                    <img class="card__image" src="img/section/manufacturers/arizer.jpg" alt="">
+                                </picture>
+                            </div>
+
+                            <h2 class="card__title">Arizer</h2>
+                        </article>
+                    </div>
+
+                    <button type="button" class="btn btn--xl show-more">🠗 ПОКАЗАТЬ ЕЩЁ</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- footer include -->
+    <footer class="footer">
+    <div class="container container--md">
+        <div class="footer__inner">
+            <button type="button" class="footer__to-top">
+                <img src="img/icons/arrow-top.svg" alt="">
+            </button>
+            <div class="footer__top">
+                <div class="footer__about-company">
+                    <a href="index.html" class="logo footer__logo">
+                        <picture>
+                            <source srcset="img/logo/logo-footer.webp">
+                            <img src="img/logo/logo-footer.png" alt="">
+                        </picture>
+                    </a>
+
+                    <ul class="socials socials--footer footer__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.943 0.209194L0.815727 5.97132C-0.221083 6.37174 -0.202779 6.93878 0.637913 7.20228L4.51059 8.39578L13.4941 2.80803C13.9112 2.5342 14.2982 2.68919 13.9818 2.96432L6.71234 9.45236L6.43385 13.3958C6.83916 13.3958 7.01567 13.2214 7.22486 13.0148L9.11674 11.2142L13.0391 14.0701C13.7543 14.4705 14.2655 14.2638 14.4564 13.4139L17.0321 1.42594L17.0308 1.42724C17.2583 0.378402 16.6451 -0.041389 15.943 0.209194Z"
+                                        fill="#dbff00" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="19px" height="19px">
+                                    <path
+                                        d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                                        fill="#dbff00" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.7526 11.3632C19.7013 11.2691 19.3841 10.5142 17.8579 8.96248C16.2601 7.33765 16.4747 7.60149 18.3992 4.792C19.5713 3.08097 20.04 2.03606 19.8933 1.58937C19.7538 1.16357 18.8917 1.2759 18.8917 1.2759L16.0252 1.29418C16.0252 1.29418 15.8129 1.26283 15.6543 1.36602C15.5005 1.4679 15.4015 1.703 15.4015 1.703C15.4015 1.703 14.9472 3.02742 14.3415 4.1533C13.0644 6.52916 12.5529 6.65455 12.3442 6.50695C11.8589 6.16344 11.9806 5.12507 11.9806 4.38841C11.9806 2.0857 12.2989 1.12569 11.3593 0.877525C11.0469 0.795239 10.818 0.740381 10.0203 0.731239C8.99718 0.719483 8.13031 0.735157 7.64024 0.997689C7.31352 1.17271 7.06193 1.56324 7.21574 1.58545C7.40534 1.61288 7.8346 1.71214 8.06235 2.05174C8.35687 2.48929 8.34614 3.47411 8.34614 3.47411C8.34614 3.47411 8.51546 6.18434 7.95145 6.52132C7.56392 6.75251 7.03331 6.28099 5.89457 4.12457C5.31149 3.02089 4.8703 1.79965 4.8703 1.79965C4.8703 1.79965 4.78564 1.57239 4.63421 1.45092C4.45058 1.30332 4.19302 1.2563 4.19302 1.2563L1.46721 1.27459C1.46721 1.27459 1.05822 1.28765 0.907974 1.48226C0.774426 1.65598 0.897242 2.01386 0.897242 2.01386C0.897242 2.01386 3.03163 7.48263 5.44742 10.2399C7.66409 12.7672 10.18 12.6014 10.18 12.6014H11.32C11.32 12.6014 11.6646 12.5596 11.8399 12.3519C12.002 12.1612 11.9961 11.8033 11.9961 11.8033C11.9961 11.8033 11.9734 10.1275 12.6841 9.88069C13.384 9.63775 14.2831 11.5003 15.2358 12.2174C15.956 12.7594 16.5033 12.6405 16.5033 12.6405L19.0515 12.6014C19.0515 12.6014 20.3846 12.5112 19.7526 11.3632Z"
+                                        fill="#dbff00" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <span class="footer__years">2016-2022</span>
+                </div>
+
+                <nav class="nav nav--main nav--footer">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Оплата и доставка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Обмен и возврат</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__subscribe">
+                    <p class="footer__subscribe-caption">Подпишись на новости</p>
+
+                    <form class="form form--subscribe-news" action="/">
+                        <input type="email" class="form__input" placeholder="Введите свой e-mail">
+                        <button type="submit" class="btn btn--orange form__btn">Отправить</button>
+
+                        <div class="form__cover">
+                            <span>СПАСИБО! <span class="hightlight-orange"> НА СВЯЗИ</span></span>
+                        </div>
+                    </form>
+                </div>
+
+                <address class="contacts contacts--footer footer__contacts">
+                    <div class="contacts__data">
+                        <div class="contacts__item">
+                            <img class="contacts__icon" src="img/icons/envelope.svg" alt="электронная почта">
+                            <a href="mailto:info@bong420.ru">info@bong420.ru</a>
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/phone.svg" alt="телефон">
+                            <a href="tel:88007072420">8 800 707-24-20</a>
+                        </div>
+                    </div>
+
+                    <div class="contacts__address">
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/geo-tag.svg" alt="">
+                            Москва
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/metro.svg" alt="">
+                            Нижние котлы
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/watch.svg" alt="">
+                            Пн-пт 12:00—19:00
+                        </div>
+                    </div>
+                </address>
+            </div>
+
+            <div class="footer__bottom">
+                <a href="#" class="footer__found-mistake">
+                    Нашли ошибку?
+                </a>
+                <span class="footer__warning">
+                    Для лиц старше 18 лет
+                </span>
+
+                <div class="footer__docs">
+                    <img src="img/icons/doc.svg" class="footer__docs-icon" alt="">
+                    <div class="footer__docs-links">
+                        <a href="public-offer.pdf">Публичная оферта</a>
+                        <a href="user-agreement.pdf">Пользовательское соглашение</a>
+                    </div>
+                    <div class="footer__docs-links">
+                        <a href="personal-data-proccessing-agreement.pdf">Публичная оферта</a>
+                        <a href="privacy-policy.pdf">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer footer--md">
+    <div class="container container--md">
+        <div class="footer__inner">
+            <button type="button" class="footer__to-top">
+                <img src="img/icons/arrow-top.svg" alt="">
+            </button>
+
+            <div class="footer__about-company">
+                <a href="index.html" class="logo footer__logo">
+                    <picture>
+                        <source srcset="img/logo/logo-footer.webp">
+                        <img src="img/logo/logo-footer.png" alt="">
+                    </picture>
+                </a>
+
+                <ul class="socials socials--footer footer__socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <svg class="socials__icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.943 0.209194L0.815727 5.97132C-0.221083 6.37174 -0.202779 6.93878 0.637913 7.20228L4.51059 8.39578L13.4941 2.80803C13.9112 2.5342 14.2982 2.68919 13.9818 2.96432L6.71234 9.45236L6.43385 13.3958C6.83916 13.3958 7.01567 13.2214 7.22486 13.0148L9.11674 11.2142L13.0391 14.0701C13.7543 14.4705 14.2655 14.2638 14.4564 13.4139L17.0321 1.42594L17.0308 1.42724C17.2583 0.378402 16.6451 -0.041389 15.943 0.209194Z"
+                                    fill="#dbff00" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                width="19px" height="19px">
+                                <path
+                                    d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                                    fill="#dbff00" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">
+                            <svg class="socials__icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.7526 11.3632C19.7013 11.2691 19.3841 10.5142 17.8579 8.96248C16.2601 7.33765 16.4747 7.60149 18.3992 4.792C19.5713 3.08097 20.04 2.03606 19.8933 1.58937C19.7538 1.16357 18.8917 1.2759 18.8917 1.2759L16.0252 1.29418C16.0252 1.29418 15.8129 1.26283 15.6543 1.36602C15.5005 1.4679 15.4015 1.703 15.4015 1.703C15.4015 1.703 14.9472 3.02742 14.3415 4.1533C13.0644 6.52916 12.5529 6.65455 12.3442 6.50695C11.8589 6.16344 11.9806 5.12507 11.9806 4.38841C11.9806 2.0857 12.2989 1.12569 11.3593 0.877525C11.0469 0.795239 10.818 0.740381 10.0203 0.731239C8.99718 0.719483 8.13031 0.735157 7.64024 0.997689C7.31352 1.17271 7.06193 1.56324 7.21574 1.58545C7.40534 1.61288 7.8346 1.71214 8.06235 2.05174C8.35687 2.48929 8.34614 3.47411 8.34614 3.47411C8.34614 3.47411 8.51546 6.18434 7.95145 6.52132C7.56392 6.75251 7.03331 6.28099 5.89457 4.12457C5.31149 3.02089 4.8703 1.79965 4.8703 1.79965C4.8703 1.79965 4.78564 1.57239 4.63421 1.45092C4.45058 1.30332 4.19302 1.2563 4.19302 1.2563L1.46721 1.27459C1.46721 1.27459 1.05822 1.28765 0.907974 1.48226C0.774426 1.65598 0.897242 2.01386 0.897242 2.01386C0.897242 2.01386 3.03163 7.48263 5.44742 10.2399C7.66409 12.7672 10.18 12.6014 10.18 12.6014H11.32C11.32 12.6014 11.6646 12.5596 11.8399 12.3519C12.002 12.1612 11.9961 11.8033 11.9961 11.8033C11.9961 11.8033 11.9734 10.1275 12.6841 9.88069C13.384 9.63775 14.2831 11.5003 15.2358 12.2174C15.956 12.7594 16.5033 12.6405 16.5033 12.6405L19.0515 12.6014C19.0515 12.6014 20.3846 12.5112 19.7526 11.3632Z"
+                                    fill="#dbff00" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <span class="footer__years">2016-2022</span>
+
+                <a href="#" class="footer__found-mistake">
+                    Нашли ошибку?
+                </a>
+            </div>
+
+            <div class="footer__content">
+                <div class="footer__row">
+                    <nav class="nav nav--main nav--footer">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Контакты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Оплата и доставка</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Обмен и возврат</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <address class="contacts contacts--footer footer__contacts">
+                        <div class="contacts__data">
+                            <div class="contacts__item">
+                                <img class="contacts__icon" src="img/icons/envelope.svg" alt="электронная почта">
+                                <a href="mailto:info@bong420.ru">info@bong420.ru</a>
+                            </div>
+                            <div class="contacts__item ">
+                                <img class="contacts__icon" src="img/icons/phone.svg" alt="телефон">
+                                <a href="tel:88007072420">8 800 707-24-20</a>
+                            </div>
+                        </div>
+
+                        <div class="contacts__address">
+                            <div class="contacts__item ">
+                                <img class="contacts__icon" src="img/icons/geo-tag.svg" alt="">
+                                Москва
+                            </div>
+                            <div class="contacts__item ">
+                                <img class="contacts__icon" src="img/icons/metro.svg" alt="">
+                                Нижние котлы
+                            </div>
+                            <div class="contacts__item ">
+                                <img class="contacts__icon" src="img/icons/watch.svg" alt="">
+                                Пн-пт 12:00—19:00
+                            </div>
+                        </div>
+                    </address>
+
+                    <div class="footer__docs">
+                        <img src="img/icons/doc.svg" class="footer__docs-icon" alt="">
+
+                        <div class="footer__docs-group">
+                            <div class="footer__docs-links">
+                                <a href="public-offer.pdf">Публичная оферта</a>
+                                <a href="user-agreement.pdf">Пользовательское соглашение</a>
+                            </div>
+                            <div class="footer__docs-links">
+                                <a href="personal-data-proccessing-agreement.pdf">Публичная оферта</a>
+                                <a href="privacy-policy.pdf">Пользовательское соглашение</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__row">
+                    <div class="footer__subscribe">
+                        <p class="footer__subscribe-caption">Подпишись на новости</p>
+
+                        <form class="form form--subscribe-news" action="/">
+                            <input type="email" class="form__input" placeholder="Введите свой e-mail">
+                            <button type="submit" class="btn btn--orange form__btn">Отправить</button>
+
+                            <div class="form__cover">
+                                <span>СПАСИБО! <span class="hightlight-orange"> НА СВЯЗИ</span></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__row">
+                    <span class="footer__warning">
+                        Для лиц старше 18 лет
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer footer--sm">
+    <div class="container container--md">
+        <div class="footer__inner">
+
+            <div class="footer__row">
+                <address class="contacts contacts--footer footer__contacts">
+                    <div class="contacts__data">
+                        <div class="contacts__item">
+                            <img class="contacts__icon" src="img/icons/envelope.svg" alt="электронная почта">
+                            <a href="mailto:info@bong420.ru">info@bong420.ru</a>
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/phone.svg" alt="телефон">
+                            <a href="tel:88007072420">8 800 707-24-20</a>
+                        </div>
+                    </div>
+
+                    <div class="contacts__address">
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/geo-tag.svg" alt="">
+                            Москва
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/metro.svg" alt="">
+                            Нижние котлы
+                        </div>
+                        <div class="contacts__item ">
+                            <img class="contacts__icon" src="img/icons/watch.svg" alt="">
+                            Пн-пт 12:00—19:00
+                        </div>
+                    </div>
+                </address>
+            </div>
+
+            <div class="footer__row">
+                <div class="footer__subscribe">
+                    <p class="footer__subscribe-caption">Подпишись на новости</p>
+
+                    <form class="form form--subscribe-news" action="/">
+                        <input type="email" class="form__input" placeholder="Введите свой e-mail">
+                        <button type="submit" class="btn btn--orange form__btn">Отправить</button>
+
+                        <div class="form__cover">
+                            <span>СПАСИБО! <span class="hightlight-orange"> НА СВЯЗИ</span></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__row footer__row--special">
+                <div class="footer__docs">
+                    <img src="img/icons/doc.svg" class="footer__docs-icon" alt="">
+
+                    <div class="footer__docs-group">
+                        <div class="footer__docs-links">
+                            <a href="public-offer.pdf">Публичная оферта</a>
+                            <a href="user-agreement.pdf">Пользовательское соглашение</a>
+                        </div>
+                        <div class="footer__docs-links">
+                            <a href="personal-data-proccessing-agreement.pdf">Публичная оферта</a>
+                            <a href="privacy-policy.pdf">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__about-company">
+                    <a href="#" class="footer__found-mistake">
+                        Нашли ошибку?
+                    </a>
+
+                    <a href="index.html" class="logo footer__logo">
+                        <picture>
+                            <source srcset="img/logo/logo-footer.webp">
+                            <img src="img/logo/logo-footer.png" alt="">
+                        </picture>
+                    </a>
+
+                    <ul class="socials socials--footer footer__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.943 0.209194L0.815727 5.97132C-0.221083 6.37174 -0.202779 6.93878 0.637913 7.20228L4.51059 8.39578L13.4941 2.80803C13.9112 2.5342 14.2982 2.68919 13.9818 2.96432L6.71234 9.45236L6.43385 13.3958C6.83916 13.3958 7.01567 13.2214 7.22486 13.0148L9.11674 11.2142L13.0391 14.0701C13.7543 14.4705 14.2655 14.2638 14.4564 13.4139L17.0321 1.42594L17.0308 1.42724C17.2583 0.378402 16.6451 -0.041389 15.943 0.209194Z"
+                                        fill="#dbff00" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="19px" height="19px">
+                                    <path
+                                        d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                                        fill="#dbff00" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.7526 11.3632C19.7013 11.2691 19.3841 10.5142 17.8579 8.96248C16.2601 7.33765 16.4747 7.60149 18.3992 4.792C19.5713 3.08097 20.04 2.03606 19.8933 1.58937C19.7538 1.16357 18.8917 1.2759 18.8917 1.2759L16.0252 1.29418C16.0252 1.29418 15.8129 1.26283 15.6543 1.36602C15.5005 1.4679 15.4015 1.703 15.4015 1.703C15.4015 1.703 14.9472 3.02742 14.3415 4.1533C13.0644 6.52916 12.5529 6.65455 12.3442 6.50695C11.8589 6.16344 11.9806 5.12507 11.9806 4.38841C11.9806 2.0857 12.2989 1.12569 11.3593 0.877525C11.0469 0.795239 10.818 0.740381 10.0203 0.731239C8.99718 0.719483 8.13031 0.735157 7.64024 0.997689C7.31352 1.17271 7.06193 1.56324 7.21574 1.58545C7.40534 1.61288 7.8346 1.71214 8.06235 2.05174C8.35687 2.48929 8.34614 3.47411 8.34614 3.47411C8.34614 3.47411 8.51546 6.18434 7.95145 6.52132C7.56392 6.75251 7.03331 6.28099 5.89457 4.12457C5.31149 3.02089 4.8703 1.79965 4.8703 1.79965C4.8703 1.79965 4.78564 1.57239 4.63421 1.45092C4.45058 1.30332 4.19302 1.2563 4.19302 1.2563L1.46721 1.27459C1.46721 1.27459 1.05822 1.28765 0.907974 1.48226C0.774426 1.65598 0.897242 2.01386 0.897242 2.01386C0.897242 2.01386 3.03163 7.48263 5.44742 10.2399C7.66409 12.7672 10.18 12.6014 10.18 12.6014H11.32C11.32 12.6014 11.6646 12.5596 11.8399 12.3519C12.002 12.1612 11.9961 11.8033 11.9961 11.8033C11.9961 11.8033 11.9734 10.1275 12.6841 9.88069C13.384 9.63775 14.2831 11.5003 15.2358 12.2174C15.956 12.7594 16.5033 12.6405 16.5033 12.6405L19.0515 12.6014C19.0515 12.6014 20.3846 12.5112 19.7526 11.3632Z"
+                                        fill="#dbff00" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__row">
+                <span class="footer__warning">
+                    Для лиц старше 18 лет
+                </span>
+            </div>
+
+
+            <button type="button" class="footer__to-top">
+                <img src="img/icons/arrow-top.svg" alt="">
+
+            </button>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
