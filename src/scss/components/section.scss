@@ -290,11 +290,17 @@
             }
             @media (max-width: 768px) {
                 grid-template-columns: repeat(2, 1fr);
+
+                margin-bottom: 20px;
             }
         }
 
         .show-more {
             margin-bottom: 85px;
+
+            @media (max-width: 576px) {
+                margin-bottom: 40px;
+            }
         }
     }
 
