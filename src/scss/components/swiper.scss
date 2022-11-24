@@ -234,6 +234,11 @@
     }
 }
 
+.swiper-button-prev--reviews,
+.swiper-button-next--reviews {
+    top: 50%;
+}
+
 // pagination
 .banner .swiper-pagination {
     position: absolute;
@@ -291,4 +296,37 @@
 .banner .swiper-pagination-bullet-active {
     background-color: #ff4207;
     border-color: #ff4207;
+}
+
+// pagination reviews
+.swiper-pagination--reviews {
+    position: absolute;
+    bottom: -40px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    @media (max-width: 768px) {
+        bottom: -60px !important;
+    }
+}
+
+.swiper-pagination--reviews .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 !important;
+
+    border: 2px solid #96afb1;
+
+    transition: 0.3s linear;
+    opacity: 1;
+    background: none;
+}
+
+.swiper-pagination--reviews .swiper-pagination-bullet-active {
+    background-color: #96afb1;
 }

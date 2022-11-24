@@ -1,4 +1,67 @@
 .tabs {
+    &--reviews-maps {
+        margin-bottom: 110px;
+        background: none;
+
+        @media (max-width: 999px) {
+            margin-bottom: 110px !important;
+        }
+
+        .tabs__header {
+            margin-bottom: 27px;
+
+            padding: 5px;
+            gap: 10px;
+
+            border-radius: 40px;
+
+            background-color: #ebebf2;
+
+            overflow: auto;
+        }
+
+        .tabs__btn {
+            width: 163px;
+            height: 40px;
+            padding: 8px 16px;
+
+            display: flex;
+            gap: 5px;
+
+            font-weight: 400;
+            text-transform: none;
+            color: #182d4d;
+            white-space: nowrap;
+
+            border-radius: 40px;
+
+            transition: 0.3s linear;
+
+            &.active {
+                color: #182d4d;
+                font-weight: 400;
+                background-color: #f6feff;
+
+                box-shadow: 0 0 5px rgba(#000, 0.3);
+            }
+
+            &:hover {
+                background-color: #f6feff;
+            }
+        }
+
+        .tabs__content {
+            position: relative;
+        }
+
+        .reviews__counter {
+            position: relative;
+            top: 25px;
+            color: #96afb1;
+            font-size: 1.4rem;
+        }
+    }
+
     margin-bottom: 55px;
 
     @media (max-width: 999px) {

@@ -268,3 +268,45 @@ const swiperProduct = new Swiper('.swiper--product', {
         swiper: swiperProductGallery,
     },
 })
+
+const swiperReviews = new Swiper('.swiper--reviews', {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 21,
+    slidesPerView: 4,
+
+    breakpoints: {
+        // when window width is >= 320px
+        1440: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+
+        999: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+    },
+    pagination: {
+        el: '.swiper-pagination--reviews',
+        type: 'bullets',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next--reviews',
+        prevEl: '.swiper-button-prev--reviews',
+    },
+})

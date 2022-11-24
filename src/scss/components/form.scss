@@ -252,6 +252,41 @@
         }
     }
 
+    &--reviews-section {
+        max-width: 423px;
+
+        padding: 30px 40px;
+        background-color: #f6feff;
+        border-radius: 6px;
+
+        @media (max-width: 999px) {
+            padding: 16px 21px;
+
+            .form__textarea {
+                height: 232px;
+                margin-bottom: 32px;
+            }
+
+            .form__btn {
+                height: 44px;
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+
+            .form__title {
+                font-size: 2.4rem;
+            }
+        }
+
+        .form__input::placeholder,
+        .form__textarea::placeholder {
+            color: #99a8aa;
+        }
+    }
+
     &__label {
         position: relative;
 
