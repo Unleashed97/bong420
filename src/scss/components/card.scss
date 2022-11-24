@@ -444,11 +444,11 @@
         }
 
         .card__text {
-            line-height: 1.6;
+            line-height: 1.4;
 
-            max-height: 132px;
+            height: 132px;
 
-            overflow: auto;
+            overflow: hidden;
 
             @media (max-width: 999px) {
                 font-size: 1.4rem;
