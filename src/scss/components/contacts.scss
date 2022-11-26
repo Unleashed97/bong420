@@ -44,10 +44,14 @@
         @media (max-width: $lg) {
             font-size: 1.4rem;
         }
+
+        .mail {
+            text-decoration: underline;
+        }
     }
     &__icon {
-        max-width: 19px;
-        max-height: 13px;
+        max-width: 20px;
+        max-height: 20px;
         margin-right: 6px;
     }
 }

@@ -5,7 +5,8 @@ customFunctions.handleBurgerClick()
 customFunctions.handleQuantityBtnsClick()
 customFunctions.handleTabs()
 customFunctions.handleFilters()
-customFunctions.handleRangeSlider()
+customFunctions.handleRangeSlider1()
+customFunctions.handleRangeSlider2()
 // vendors
 
 // swiper
@@ -129,7 +130,7 @@ const swiperNew = new Swiper('.swiper--new', {
         },
 
         767: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 25,
         },
         320: {

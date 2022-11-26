@@ -3,6 +3,10 @@
     align-items: center;
     gap: 12px;
 
+    @media (max-width: 999px) {
+        gap: 28px;
+    }
+
     &__item {
     }
 

@@ -4,6 +4,14 @@
     margin-top: 29px;
     margin-bottom: 15px;
 
+    &--catalog {
+        margin-top: 0;
+    }
+
+    &--reviews {
+        margin-bottom: 2px;
+    }
+
     &__item {
         font-size: 1.4rem;
         letter-spacing: 0.05em;

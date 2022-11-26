@@ -80,7 +80,7 @@
     }
 
     &__card-image-block {
-        flex-basis: 55%;
+        flex-basis: 60%;
         max-width: 651px;
 
         overflow-x: hidden;
@@ -148,7 +148,7 @@
     }
 
     &__card-text-block {
-        flex-basis: 45%;
+        flex-basis: 40%;
     }
 
     &__card-price {
@@ -294,6 +294,7 @@
     }
 
     &__card-advantages {
+        margin-left: 15px;
         margin-bottom: 43px;
 
         display: flex;
@@ -385,6 +386,9 @@
 
         font-size: 2.8rem;
         line-height: 1.2;
+
+        font-weight: 700;
+        letter-spacing: 0.05em;
 
         @media (max-width: 999px) {
             font-size: 2.4rem;

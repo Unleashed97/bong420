@@ -1,4 +1,5 @@
 .catalog {
+    width: 100%;
     @media (max-width: 999px) {
         &__text {
             font-size: 1.6rem;
@@ -26,6 +27,10 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 20px 11px;
         }
+    }
+
+    .card__image-wrapper {
+        width: 100%;
     }
 
     .btn--xl {

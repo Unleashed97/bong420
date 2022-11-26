@@ -29,6 +29,47 @@
             }
         }
 
+        .banner__delivery {
+            min-height: 100%;
+            padding: 40px;
+            flex-basis: 30%;
+
+            background-color: #ff4207;
+
+            @media (max-width: 999px) {
+                padding: 22px;
+            }
+
+            .banner__title {
+                @media (max-width: 576px) {
+                    br {
+                        display: none;
+                    }
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .banner__sale {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-basis: 70%;
+
+            padding: 10px 0 0 50px;
+
+            background-image: url('../img/banner/bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            .banner__title {
+                margin-bottom: 5px;
+            }
+        }
+
         .banner__title {
             @media (max-width: 999px) {
                 font-size: 1.9rem;
@@ -44,12 +85,19 @@
 
         .banner__sale-btn {
             @media (max-width: 999px) {
-                max-width: 240px;
+                max-width: 183px;
                 min-height: 35px;
 
                 font-size: 1.2rem;
 
                 top: -18px;
+            }
+        }
+
+        .banner__delivery-btn {
+            @media (max-width: 999px) {
+                max-width: 161px;
+                height: 35px;
             }
         }
     }
@@ -147,6 +195,9 @@
         background-size: 307px, cover;
 
         justify-content: flex-end;
+
+        min-height: 144px;
+        max-height: 144px;
 
         .banner__title {
             margin-right: 43px;

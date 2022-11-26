@@ -3,6 +3,10 @@
         .nav__list {
             gap: 35px;
         }
+
+        .nav__link {
+            letter-spacing: 0.1em;
+        }
     }
 
     &--mobile {

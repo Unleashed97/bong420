@@ -88,7 +88,7 @@
                     <div class="contacts__data">
                         <div class="contacts__item">
                             <img class="contacts__icon" src="img/icons/envelope.svg" alt="конверт">
-                            <a href="mailto:info@bong420.ru">info@bong420.ru</a>
+                            <a href="mailto:info@bong420.ru" class="mail">info@bong420.ru</a>
                         </div>
                         <div class="contacts__item ">
                             <img class="contacts__icon" src="img/icons/phone.svg" alt="телефон">
@@ -1004,7 +1004,7 @@
             </div><!-- end of banner 1-->
 
             <!-- breadcrumbs -->
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs breadcrumbs--catalog">
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="index.html">Главная</a>
                 </li>
@@ -1096,16 +1096,17 @@
                                     ЦЕНА
                                 </h4>
                                 <div class="sidebar__block-content">
-                                    <div class="range-slider">
+                                    <div class="range-slider range-slider1">
                                         <div class="range-slider__header">
                                             <span class="range-slider__header-caption range-slider__header-min">
-                                                3 315 ₽
+
                                             </span>
                                             <span class="range-slider__header-caption range-slider__header-max">
-                                                43 225 ₽
+
                                             </span>
                                         </div>
                                         <div class="range-slider__body">
+                                            <div class="range-slider__track"></div>
                                             <input type="range" class="range-slider__input range-slider__input--1"
                                                 value="3315" min="100" max="50000" step="5">
                                             <input type="range" class="range-slider__input range-slider__input--2"
@@ -1133,81 +1134,183 @@
                                 <div class="sidebar__block-content">
                                     <ul class="sidebar__list">
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Arizer</span>
-                                                <span class="sidebar__itme-quantity">14</span>
+                                            <span class="sidebar__item-name">Arizer</span>
+                                            <span class="sidebar__itme-quantity">14</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Air Vape</span>
-                                                <span class="sidebar__itme-quantity">18</span>
+                                            <span class="sidebar__item-name">Air Vape</span>
+                                            <span class="sidebar__itme-quantity">18</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Boundless</span>
-                                                <span class="sidebar__itme-quantity">3</span>
+
+                                            <span class="sidebar__item-name">Boundless</span>
+                                            <span class="sidebar__itme-quantity">3</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Dynavap</span>
-                                                <span class="sidebar__itme-quantity">164</span>
+
+                                            <span class="sidebar__item-name">Dynavap</span>
+                                            <span class="sidebar__itme-quantity">164</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Da Vinci</span>
-                                                <span class="sidebar__itme-quantity">12</span>
+
+                                            <span class="sidebar__item-name">Da Vinci</span>
+                                            <span class="sidebar__itme-quantity">12</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Dr. Dabber</span>
-                                                <span class="sidebar__itme-quantity">0</span>
+
+                                            <span class="sidebar__item-name">Dr. Dabber</span>
+                                            <span class="sidebar__itme-quantity">0</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Fire Fly</span>
-                                                <span class="sidebar__itme-quantity">21</span>
+
+                                            <span class="sidebar__item-name">Fire Fly</span>
+                                            <span class="sidebar__itme-quantity">21</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Linx</span>
-                                                <span class="sidebar__itme-quantity">35</span>
+
+                                            <span class="sidebar__item-name">Linx</span>
+                                            <span class="sidebar__itme-quantity">35</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Grenco Science</span>
-                                                <span class="sidebar__itme-quantity">66</span>
+
+                                            <span class="sidebar__item-name">Grenco Science</span>
+                                            <span class="sidebar__itme-quantity">66</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">X-Vape</span>
-                                                <span class="sidebar__itme-quantity">12</span>
+
+                                            <span class="sidebar__item-name">X-Vape</span>
+                                            <span class="sidebar__itme-quantity">12</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">PAX</span>
-                                                <span class="sidebar__itme-quantity">24</span>
+
+                                            <span class="sidebar__item-name">PAX</span>
+                                            <span class="sidebar__itme-quantity">24</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Storz & Bickel</span>
-                                                <span class="sidebar__itme-quantity">52</span>
+
+                                            <span class="sidebar__item-name">Storz & Bickel</span>
+                                            <span class="sidebar__itme-quantity">52</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
-                                        <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Vivant</span>
-                                                <span class="sidebar__itme-quantity">14</span>
+                                        <li class="sidebar__item active">
+
+                                            <span class="sidebar__item-name">Vivant</span>
+                                            <span class="sidebar__itme-quantity">14</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                     </ul>
@@ -1227,57 +1330,129 @@
                                 <div class="sidebar__block-content">
                                     <ul class="sidebar__list">
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Портативные</span>
-                                                <span class="sidebar__itme-quantity">464</span>
+
+                                            <span class="sidebar__item-name">Портативные</span>
+                                            <span class="sidebar__itme-quantity">464</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Стационарные</span>
-                                                <span class="sidebar__itme-quantity">677</span>
+
+                                            <span class="sidebar__item-name">Стационарные</span>
+                                            <span class="sidebar__itme-quantity">677</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Конвекционные</span>
-                                                <span class="sidebar__itme-quantity">144</span>
+
+                                            <span class="sidebar__item-name">Конвекционные</span>
+                                            <span class="sidebar__itme-quantity">144</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Кондукционные</span>
-                                                <span class="sidebar__itme-quantity">214</span>
+
+                                            <span class="sidebar__item-name">Кондукционные</span>
+                                            <span class="sidebar__itme-quantity">214</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Электронные</span>
-                                                <span class="sidebar__itme-quantity">314</span>
+
+                                            <span class="sidebar__item-name">Электронные</span>
+                                            <span class="sidebar__itme-quantity">314</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Механические</span>
-                                                <span class="sidebar__itme-quantity">514</span>
+
+                                            <span class="sidebar__item-name">Механические</span>
+                                            <span class="sidebar__itme-quantity">514</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Для трав</span>
-                                                <span class="sidebar__itme-quantity">1114</span>
+
+                                            <span class="sidebar__item-name">Для трав</span>
+                                            <span class="sidebar__itme-quantity">1114</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Для масел</span>
-                                                <span class="sidebar__itme-quantity">32</span>
+
+                                            <span class="sidebar__item-name">Для масел</span>
+                                            <span class="sidebar__itme-quantity">32</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="sidebar__item">
-                                            <button type="button" class="btn sidebar__item-btn">
-                                                <span class="sidebar__item-name">Выпареватели</span>
-                                                <span class="sidebar__itme-quantity">14</span>
+
+                                            <span class="sidebar__item-name">Выпареватели</span>
+                                            <span class="sidebar__itme-quantity">14</span>
+                                            <button type="button" class="btn sidebar-item-btn-deselect">
+                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.58121 12.1459L11.15 2.47998" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                    <path d="M11.3779 12.1455L1.80916 2.47959" stroke="#182D4D"
+                                                        stroke-width="3" stroke-linecap="round" />
+                                                </svg>
                                             </button>
                                         </li>
                                     </ul>
@@ -1295,16 +1470,17 @@
                                     Высота бонга
                                 </h4>
                                 <div class="sidebar__block-content">
-                                    <div class="range-slider">
+                                    <div class="range-slider range-slider2">
                                         <div class="range-slider__header">
                                             <span class="range-slider__header-caption range-slider__header-min">
-                                                9 cм
+
                                             </span>
                                             <span class="range-slider__header-caption range-slider__header-max">
-                                                100см
+
                                             </span>
                                         </div>
                                         <div class="range-slider__body">
+                                            <div class="range-slider__track"></div>
                                             <input type="range" class="range-slider__input range-slider__input--1"
                                                 value="9" min="5" max="100" step="1">
                                             <input type="range" class="range-slider__input range-slider__input--2"

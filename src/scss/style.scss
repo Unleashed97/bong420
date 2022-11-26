@@ -55,8 +55,16 @@ a {
 }
 
 // main
-main {
+.main {
     margin-top: 50px;
+
+    &--index {
+        margin-top: 43px;
+    }
+
+    &--reviews {
+        margin-top: 39px;
+    }
 
     @media (max-width: 576px) {
         margin-top: 19px;
